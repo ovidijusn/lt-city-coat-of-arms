@@ -29,6 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@vitejs/plugin-vue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.0"],\
+            ["bootstrap", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:5.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
             ["vite", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.11"],\
             ["vue", "npm:3.3.4"],\
@@ -690,6 +691,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["bootstrap", [\
+        ["npm:5.3.2", {\
+          "packageLocation": "./.yarn/cache/bootstrap-npm-5.3.2-20b391b636-d5580b253d.zip/node_modules/bootstrap/",\
+          "packageDependencies": [\
+            ["bootstrap", "npm:5.3.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:5.3.2", {\
+          "packageLocation": "./.yarn/__virtual__/bootstrap-virtual-d12d7fbe22/0/cache/bootstrap-npm-5.3.2-20b391b636-d5580b253d.zip/node_modules/bootstrap/",\
+          "packageDependencies": [\
+            ["bootstrap", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:5.3.2"],\
+            ["@popperjs/core", null],\
+            ["@types/popperjs__core", null]\
+          ],\
+          "packagePeers": [\
+            "@popperjs/core",\
+            "@types/popperjs__core"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["brace-expansion", [\
         ["npm:1.1.11", {\
           "packageLocation": "./.yarn/cache/brace-expansion-npm-1.1.11-fb95eb05ad-faf34a7bb0.zip/node_modules/brace-expansion/",\
@@ -1244,6 +1267,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["lt-city-coat-of-arms", "workspace:."],\
             ["@vitejs/plugin-vue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.0"],\
+            ["bootstrap", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:5.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
             ["vite", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.11"],\
             ["vue", "npm:3.3.4"],\
