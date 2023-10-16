@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@vitejs/plugin-vue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.0"],\
             ["bootstrap", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:5.3.2"],\
+            ["geolib", "npm:3.3.4"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
             ["vite", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.11"],\
             ["vue", "npm:3.3.4"],\
@@ -1046,6 +1047,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["geolib", [\
+        ["npm:3.3.4", {\
+          "packageLocation": "./.yarn/cache/geolib-npm-3.3.4-4eebb0f7e4-b5ca8090ef.zip/node_modules/geolib/",\
+          "packageDependencies": [\
+            ["geolib", "npm:3.3.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["glob", [\
         ["npm:10.3.10", {\
           "packageLocation": "./.yarn/cache/glob-npm-10.3.10-da1ef8b112-4f2fe2511e.zip/node_modules/glob/",\
@@ -1268,6 +1278,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lt-city-coat-of-arms", "workspace:."],\
             ["@vitejs/plugin-vue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.0"],\
             ["bootstrap", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:5.3.2"],\
+            ["geolib", "npm:3.3.4"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
             ["vite", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.11"],\
             ["vue", "npm:3.3.4"],\
