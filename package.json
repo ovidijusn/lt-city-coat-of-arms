@@ -10,8 +10,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "bootstrap": "^5.3.2",
     "geolib": "^3.3.4",
+    "primevue": "^3.36.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {

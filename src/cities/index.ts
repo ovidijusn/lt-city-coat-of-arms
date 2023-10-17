@@ -1,3 +1,5 @@
+import akmeneImg from './emblems/300px-akmene.png';
+
 type Coord = {
     long: number,
     lang: number
@@ -12,7 +14,7 @@ export type City = {
 export const cities: City[] = [
     {
         name: 'Akmenė',
-        image: 'akmene.png',
+        image: akmeneImg,
         location: {
             lang: 56.246,
             long: 22.755,

@@ -1218,6 +1218,7 @@ __metadata:
     bootstrap: ^5.3.2
     geolib: ^3.3.4
     gh-pages: ^6.0.0
+    primevue: ^3.36.0
     typescript: ^5.0.2
     vite: ^4.4.5
     vue: ^3.3.4
@@ -1586,6 +1587,15 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 1d8611341b073143ad90486fcdfeab49edd243377b1f51834dc4f6d028e82ce5190e4f11bb2633276864503654fb7cab28e67abdc0fbf9d1f88cad4a0ff0beea
+  languageName: node
+  linkType: hard
+
+"primevue@npm:^3.36.0":
+  version: 3.36.0
+  resolution: "primevue@npm:3.36.0"
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: e5aca69693a641d6badae7516e3e1c0e57d171b5c71c21f9126cf8846225c6855076139ec78b50a844d035e7d9a92e312d968f06546eb5cab6ba437cd382af78
   languageName: node
   linkType: hard
 

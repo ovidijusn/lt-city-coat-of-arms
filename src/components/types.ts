@@ -1,2 +1,2 @@
 export type Offset = { x: number, y: number }
-export type Card = { flipped: boolean, offset: Offset };
+export type FragmentState = { flipped: boolean, offset: Offset };

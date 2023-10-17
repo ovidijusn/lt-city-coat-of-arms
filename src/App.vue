@@ -1,25 +1,9 @@
-<script setup lang="ts">
-import CoatOfArmCard from './components/CoatOfArmCard.vue'
-</script>
-
 <template>
-  <div class="container-fluid w-100">
-
-      <CoatOfArmCard class="mx-auto" msg="Vite + Vue" />
-</div>
+    <CoaGameCard class="mx-auto" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<script setup lang="ts">
+import CoaGameCard from './components/CoaGameCard.vue'
+</script>
+
+<style scoped></style>
