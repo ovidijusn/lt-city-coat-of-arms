@@ -30,7 +30,7 @@ const cards = ref([] as Card[]);
     cards.value[idx] = { flipped: true, offset: offset(idx) };
   }
 
-const imageUrl = computed(() => '/public/coat-of-arms/' + props.city.image);
+const imageUrl = computed(() => '/lt-city-coat-of-arms/coat-of-arms/' + props.city.image);
 </script>
 
 <template>
