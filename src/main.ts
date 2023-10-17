@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
+import "primeflex/primeflex.css";
+import 'primevue/resources/themes/bootstrap4-light-blue/theme.css'
 import PrimeVue from 'primevue/config';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/style.css'
 import App from './App.vue'
 
