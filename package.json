@@ -13,6 +13,7 @@
     "geolib": "^3.3.4",
     "primeflex": "^3.3.1",
     "primevue": "^3.36.0",
+    "random": "^4.1.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {

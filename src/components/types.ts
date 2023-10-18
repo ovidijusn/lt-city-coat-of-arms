@@ -1,2 +1,2 @@
-export type Offset = { x: number, y: number }
-export type FragmentState = { flipped: boolean, offset: Offset };
+export type Fragment = { image: string, width: number, height: number, offsetX: number, offsetY: number };
+export type GameState = {}

@@ -1210,6 +1210,7 @@ __metadata:
     gh-pages: ^6.0.0
     primeflex: ^3.3.1
     primevue: ^3.36.0
+    random: ^4.1.0
     typescript: ^5.0.2
     vite: ^4.4.5
     vue: ^3.3.4
@@ -1607,6 +1608,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"random@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "random@npm:4.1.0"
+  dependencies:
+    seedrandom: ^3.0.5
+  checksum: ecbcf1bfadbdc67b240754725e553135c7575cc61869d30f187f2b506696ef482dd4ddff0da48090717aca1c08dc19a372800c99087fc32d972b13eac1cbefc4
+  languageName: node
+  linkType: hard
+
 "readable-stream@npm:^3.6.0":
   version: 3.6.2
   resolution: "readable-stream@npm:3.6.2"
@@ -1661,6 +1671,13 @@ __metadata:
   version: 2.1.2
   resolution: "safer-buffer@npm:2.1.2"
   checksum: cab8f25ae6f1434abee8d80023d7e72b598cf1327164ddab31003c51215526801e40b66c5e65d658a0af1e9d6478cadcb4c745f4bd6751f97d8644786c0978b0
+  languageName: node
+  linkType: hard
+
+"seedrandom@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "seedrandom@npm:3.0.5"
+  checksum: 728b56bc3bc1b9ddeabd381e449b51cb31bdc0aa86e27fcd0190cea8c44613d5bcb2f6bb63ed79f78180cbe791c20b8ec31a9627f7b7fc7f476fd2bdb7e2da9f
   languageName: node
   linkType: hard
 
