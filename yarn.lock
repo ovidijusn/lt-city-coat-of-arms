@@ -529,15 +529,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap@npm:^5.3.2":
-  version: 5.3.2
-  resolution: "bootstrap@npm:5.3.2"
-  peerDependencies:
-    "@popperjs/core": ^2.11.8
-  checksum: d5580b253d121ffc137388d41da58dce8d15f1ccd574e12f28d4a08e7649ca15e95db645b2b677cb8025bccd446bff04138fc0fe64f8cba0ccc5dc004a8644cf
-  languageName: node
-  linkType: hard
-
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -1215,9 +1206,10 @@ __metadata:
   resolution: "lt-city-coat-of-arms@workspace:."
   dependencies:
     "@vitejs/plugin-vue": ^4.2.3
-    bootstrap: ^5.3.2
     geolib: ^3.3.4
     gh-pages: ^6.0.0
+    primeflex: ^3.3.1
+    primevue: ^3.36.0
     typescript: ^5.0.2
     vite: ^4.4.5
     vue: ^3.3.4
@@ -1586,6 +1578,22 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 1d8611341b073143ad90486fcdfeab49edd243377b1f51834dc4f6d028e82ce5190e4f11bb2633276864503654fb7cab28e67abdc0fbf9d1f88cad4a0ff0beea
+  languageName: node
+  linkType: hard
+
+"primeflex@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "primeflex@npm:3.3.1"
+  checksum: 3811f48d9b453141a13bdbfb17f272d01a0bb02fc507d4b77dcd5471feccd4d9e80f10f67dfdfc8571672a568c1aadf03179dd6a4d8536b3f60f7fa060e5bfad
+  languageName: node
+  linkType: hard
+
+"primevue@npm:^3.36.0":
+  version: 3.36.0
+  resolution: "primevue@npm:3.36.0"
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: e5aca69693a641d6badae7516e3e1c0e57d171b5c71c21f9126cf8846225c6855076139ec78b50a844d035e7d9a92e312d968f06546eb5cab6ba437cd382af78
   languageName: node
   linkType: hard
 

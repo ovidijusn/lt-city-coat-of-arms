@@ -29,9 +29,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@vitejs/plugin-vue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.0"],\
-            ["bootstrap", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:5.3.2"],\
             ["geolib", "npm:3.3.4"],\
             ["gh-pages", "npm:6.0.0"],\
+            ["primeflex", "npm:3.3.1"],\
+            ["primevue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:3.36.0"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
             ["vite", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.11"],\
             ["vue", "npm:3.3.4"],\
@@ -717,28 +718,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/balanced-match-npm-1.0.2-a53c126459-9706c088a2.zip/node_modules/balanced-match/",\
           "packageDependencies": [\
             ["balanced-match", "npm:1.0.2"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["bootstrap", [\
-        ["npm:5.3.2", {\
-          "packageLocation": "./.yarn/cache/bootstrap-npm-5.3.2-20b391b636-d5580b253d.zip/node_modules/bootstrap/",\
-          "packageDependencies": [\
-            ["bootstrap", "npm:5.3.2"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:5.3.2", {\
-          "packageLocation": "./.yarn/__virtual__/bootstrap-virtual-d12d7fbe22/0/cache/bootstrap-npm-5.3.2-20b391b636-d5580b253d.zip/node_modules/bootstrap/",\
-          "packageDependencies": [\
-            ["bootstrap", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:5.3.2"],\
-            ["@popperjs/core", null],\
-            ["@types/popperjs__core", null]\
-          ],\
-          "packagePeers": [\
-            "@popperjs/core",\
-            "@types/popperjs__core"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1449,9 +1428,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["lt-city-coat-of-arms", "workspace:."],\
             ["@vitejs/plugin-vue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.0"],\
-            ["bootstrap", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:5.3.2"],\
             ["geolib", "npm:3.3.4"],\
             ["gh-pages", "npm:6.0.0"],\
+            ["primeflex", "npm:3.3.1"],\
+            ["primevue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:3.36.0"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
             ["vite", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.11"],\
             ["vue", "npm:3.3.4"],\
@@ -1856,6 +1836,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nanoid", "npm:3.3.6"],\
             ["picocolors", "npm:1.0.0"],\
             ["source-map-js", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["primeflex", [\
+        ["npm:3.3.1", {\
+          "packageLocation": "./.yarn/cache/primeflex-npm-3.3.1-e4d21caabd-3811f48d9b.zip/node_modules/primeflex/",\
+          "packageDependencies": [\
+            ["primeflex", "npm:3.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["primevue", [\
+        ["npm:3.36.0", {\
+          "packageLocation": "./.yarn/cache/primevue-npm-3.36.0-28d3750e4a-e5aca69693.zip/node_modules/primevue/",\
+          "packageDependencies": [\
+            ["primevue", "npm:3.36.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:3.36.0", {\
+          "packageLocation": "./.yarn/__virtual__/primevue-virtual-60d31a7788/0/cache/primevue-npm-3.36.0-28d3750e4a-e5aca69693.zip/node_modules/primevue/",\
+          "packageDependencies": [\
+            ["primevue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:3.36.0"],\
+            ["@types/vue", null],\
+            ["vue", "npm:3.3.4"]\
+          ],\
+          "packagePeers": [\
+            "@types/vue",\
+            "vue"\
           ],\
           "linkType": "HARD"\
         }]\
