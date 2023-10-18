@@ -1,48 +1,59 @@
 <template>
   <div class="flipping-board">
-    <CoaPuzzlePeace v-for="state in states" class="fragment" :state="state" :image-url="city.image"
-      :style="{ top: `${state.offset.y}px`, left: `${state.offset.x}px` }" @click="state.flipped = !state.flipped" />
+    <CoaPuzzlePeace v-for="(fragment, idx) in fragments" class="fragment" :fragment="fragment" :flipped="flips[idx]"
+      :style="{ top: `${fragment.offsetY}px`, left: `${fragment.offsetX}px` }" @click="flips[idx] = !flips[idx]" />
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref, computed, PropType } from 'vue';
+
 import CoaPuzzlePeace from './CoaPuzzlePeace.vue';
 
-import { ref, PropType } from 'vue';
 import { City } from '../cities';
-import { FragmentState, Offset } from './types'
+import { Fragment } from './types';
+import { getImageSize } from '../utils';
 
-defineProps({
+const props = defineProps({
   city: {
     type: Object as PropType<City>,
     required: true
   }
 });
 
-function moveX(idx: number): number {
-  return (idx % 3) * 100
-}
-function moveY(idx: number): number {
-  return Math.floor(idx / 3) * 100
-}
-function offset(idx: number): Offset {
-  return {
-    x: moveX(idx),
-    y: moveY(idx)
-  }
-}
+const width = 100;
 
-const states = ref([] as FragmentState[]);
-  for (let idx = 0; idx < 9; idx++) {
-    states.value[idx] = { flipped: true, offset: offset(idx) };
+const fragments = ref([] as Fragment[]);
+const flips = ref([] as boolean[]);
+getImageSize(props.city.image, (size) => {
+  let height;
+  if (size.height % 3 == 0) {
+    height = size.height / 6
+  } else if ((size.height + 1) % 3 == 0) {
+    height = (size.height + 1) / 6
+  } else {
+    height = (size.height + 2) / 6
   }
+  height = Math.floor(height) + (size.height % 2 == 0 ? 0 : 1);
+
+  for (let idx = 0; idx < 9; idx++) {
+
+    const offsetX = (idx % 3) * 100;
+    const offsetY = Math.floor(idx / 3) * height;
+    fragments.value[idx] = { width, height, offsetX, offsetY, image: props.city.image };
+    flips.value[idx] = false;
+  }
+});
+
+const puzzleHeight = computed(() => (fragments.value.length > 0 ? fragments.value[0].height * 3 + 10 : 400) + 'px');
+
 </script>
 
 <style scoped>
 .flipping-board {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: v-bind(puzzleHeight);
 }
 
 .flipping-board>.fragment {

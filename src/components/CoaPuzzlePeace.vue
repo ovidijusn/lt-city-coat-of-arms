@@ -1,29 +1,30 @@
 <script setup lang="ts">
 import { computed, PropType } from 'vue';
-import { FragmentState } from './types'
+import { Fragment } from './types'
 
 
 const props = defineProps({
-  state: {
-    type: Object as PropType<FragmentState>,
+  fragment: {
+    type: Object as PropType<Fragment>,
     required: true
   },
-  imageUrl: {
-    type: String,
-    required: true
+  flipped: {
+    type: Boolean,
+    default: false
   }
 });
 
 defineEmits(['click']);
 
-const imgContent = computed(()=>`url(${props.imageUrl})`);
-const moveX = computed(()=>`${props.state.offset.x}px`);
-const moveY = computed(()=>`${props.state.offset.y}px`);
-
+const imgContent = computed(()=>`url(${props.fragment.image})`);
+const moveX = computed(()=>`${props.fragment.offsetX}px`);
+const moveY = computed(()=>`${props.fragment.offsetY}px`);
+const width = computed(()=>`${props.fragment.width}px`);
+const height = computed(()=>`${props.fragment.height}px`);
 </script>
 
 <template>
-  <div class="flip-card" :class="{ flipped: state.flipped }" @click="$emit('click')">
+  <div class="flip-card" :class="{ flipped }" @click="$emit('click')">
     <div class="flip-card-inner">
       <div class="flip-card-front">
 
@@ -38,8 +39,8 @@ const moveY = computed(()=>`${props.state.offset.y}px`);
 <style scoped>
 .flip-card {
   background-color: transparent;
-  width: 100px;
-  height: 100px;
+  width: v-bind(width);
+  height: v-bind(height);
   perspective: 1000px;
 }
 
