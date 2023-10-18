@@ -27,7 +27,7 @@ const items = ref(['aa', 'ab', 'ba', 'dd']);
 const value = ref('');
 const canGuess = computed(() => value.value);
 
-function search(event) {
+function search(event: any) {
   items.value = cities
     .map((city) => city.name)
     .filter((name) => name.toLowerCase().startsWith(event.query.toLowerCase()));

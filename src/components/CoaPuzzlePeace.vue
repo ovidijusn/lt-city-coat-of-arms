@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { computed, PropType } from 'vue';
-import { Card } from './types'
+import { FragmentState } from './types'
 
 
 const props = defineProps({
-  card: {
-    type: Object as PropType<Card>,
+  state: {
+    type: Object as PropType<FragmentState>,
     required: true
   },
   imageUrl: {
@@ -17,13 +17,13 @@ const props = defineProps({
 defineEmits(['click']);
 
 const imgContent = computed(()=>`url(${props.imageUrl})`);
-const moveX = computed(()=>`${props.card.offset.x}px`);
-const moveY = computed(()=>`${props.card.offset.y}px`);
+const moveX = computed(()=>`${props.state.offset.x}px`);
+const moveY = computed(()=>`${props.state.offset.y}px`);
 
 </script>
 
 <template>
-  <div class="flip-card" :class="{ flipped: card.flipped }" @click="$emit('click')">
+  <div class="flip-card" :class="{ flipped: state.flipped }" @click="$emit('click')">
     <div class="flip-card-inner">
       <div class="flip-card-front">
 

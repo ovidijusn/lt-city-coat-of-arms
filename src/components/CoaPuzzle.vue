@@ -1,7 +1,7 @@
 <template>
   <div class="flipping-board">
-    <CoaPuzzlePeace v-for="card in cards" class="fragment" :card="card" :image-url="city.image"
-      :style="{ top: `${card.offset.y}px`, left: `${card.offset.x}px` }" @click="card.flipped = !card.flipped" />
+    <CoaPuzzlePeace v-for="state in states" class="fragment" :state="state" :image-url="city.image"
+      :style="{ top: `${state.offset.y}px`, left: `${state.offset.x}px` }" @click="state.flipped = !state.flipped" />
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import CoaPuzzlePeace from './CoaPuzzlePeace.vue';
 
 import { ref, PropType } from 'vue';
 import { City } from '../cities';
-import { Card, Offset } from './types'
+import { FragmentState, Offset } from './types'
 
 defineProps({
   city: {
@@ -32,9 +32,9 @@ function offset(idx: number): Offset {
   }
 }
 
-const cards = ref([] as Card[]);
+const states = ref([] as FragmentState[]);
   for (let idx = 0; idx < 9; idx++) {
-    cards.value[idx] = { flipped: true, offset: offset(idx) };
+    states.value[idx] = { flipped: true, offset: offset(idx) };
   }
 </script>
 
