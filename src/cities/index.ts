@@ -6,34 +6,21 @@ import baltoji_vokeImg from './emblems/baltoji_voke.png';
 import birstonasImg from './emblems/birstonas.png';
 import birzaiImg from './emblems/birzai.png';
 
-type Coord = {
-    long: number,
-    lang: number
-}
-
-type Size = {
-    w: number,
-    h: number
-}
+import { City, Size } from '@/types';
 
 function defaultWidth(h: number): Size {
     return { w: 600, h };
 }
 
-export type City = {
-    name: string,
-    image: string,
-    imageSize: Size,
-    location: Coord
-}
+
 
 export const cities: City[] = [
     {
         name: 'Akmenė',
         image: akmeneImg,
         location: {
-            lang: 56.246,
-            long: 22.755,
+            latitude: 56.246,
+            longitude: 22.755,
         },
         imageSize: defaultWidth(725)
     },
@@ -41,8 +28,8 @@ export const cities: City[] = [
         name: 'Alytus',
         image: alytusImg,
         location: {
-            lang: 54.396,
-            long: 24.046
+            latitude: 54.396,
+            longitude: 24.046
         },
         imageSize: defaultWidth(710)
     },
@@ -51,8 +38,8 @@ export const cities: City[] = [
         name: 'Anykščiai',
         image: anyksciaiImg,
         location: {
-            lang: 55.526,
-            long: 25.106
+            latitude: 55.526,
+            longitude: 25.106
         },
         imageSize: defaultWidth(714)
     },
@@ -60,8 +47,8 @@ export const cities: City[] = [
         name: 'Ariogala',
         image: ariogalaImg,
         location: {
-            lang: 55.263,
-            long: 23.483
+            latitude: 55.263,
+            longitude: 23.483
         },
         imageSize: defaultWidth(717)
     },
@@ -69,8 +56,8 @@ export const cities: City[] = [
         name: 'Baltoji Vokė',
         image: baltoji_vokeImg,
         location: {
-            lang: 54.454,
-            long: 25.12
+            latitude: 54.454,
+            longitude: 25.12
         },
         imageSize: defaultWidth(713)
     },
@@ -78,8 +65,8 @@ export const cities: City[] = [
         name: 'Birštonas',
         image: birstonasImg,
         location: {
-            lang: 54.604,
-            long: 24.034
+            latitude: 54.604,
+            longitude: 24.034
         },
         imageSize: defaultWidth(725)
     },
@@ -88,8 +75,8 @@ export const cities: City[] = [
         name: 'Biržai',
         image: birzaiImg,
         location: {
-            lang: 56.2,
-            long: 24.757
+            latitude: 56.2,
+            longitude: 24.757
         },
         imageSize: defaultWidth(705)
     }
