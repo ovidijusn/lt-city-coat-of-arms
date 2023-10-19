@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, PropType } from 'vue';
-import { Fragment } from './types'
+import { Fragment } from '@/types'
 
 
 const props = defineProps({
