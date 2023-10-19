@@ -27,11 +27,13 @@ import Button from 'primevue/button';
 import CoaPuzzle from './CoaPuzzle.vue';
 import { cities } from '../cities';
 
+
+
 const today = new Date();
 const seed = `${today.getFullYear()}${today.getMonth()}${today.getDay()}`;
 
-random.use(seed);
-const whichCity = random.int(0, cities.length - 1);
+const rnd = random.clone(seed);
+const whichCity = rnd.int(0, cities.length - 1);
 console.log(seed, whichCity);
 const city = ref(cities[whichCity]);
 
