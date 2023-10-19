@@ -4,7 +4,7 @@
       <div style="  padding-top: 20px;">
         <CoaPuzzle class="mx-auto" :city="city" />
       </div>
-      
+
     </template>
     <template #title>
       <div class="p-inputgroup">
@@ -17,27 +17,21 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import random from 'random'
 
 import Card from 'primevue/card';
 import AutoComplete from 'primevue/autocomplete';
 import Button from 'primevue/button';
 
-
 import CoaPuzzle from './CoaPuzzle.vue';
 import { cities } from '../cities';
+import { choice } from '../utils/random';
 
+const cityOfChoice = choice(cities);
 
+const city = ref(cityOfChoice);
+console.log(cityOfChoice)
 
-const today = new Date();
-const seed = `${today.getFullYear()}${today.getMonth()}${today.getDay()}`;
-
-const rnd = random.clone(seed);
-const whichCity = rnd.int(0, cities.length - 1);
-console.log(seed, whichCity);
-const city = ref(cities[whichCity]);
-
-const items = ref(['aa', 'ab', 'ba', 'dd']);
+const items = ref([] as string[]);
 
 const value = ref('');
 const canGuess = computed(() => value.value);

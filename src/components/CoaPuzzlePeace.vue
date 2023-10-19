@@ -30,7 +30,7 @@ const height = computed(()=>`${props.fragment.height}px`);
 
       </div>
       <div class="flip-card-back">
-        <img class="coat-of-arms" width="300"  />
+        <img class="coat-of-arms" width="300" draggable="false"  />
       </div>
     </div>
   </div>
