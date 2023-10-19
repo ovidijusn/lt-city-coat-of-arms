@@ -6,13 +6,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, PropType } from 'vue';
+import { ref, PropType } from 'vue';
 
 import CoaPuzzlePeace from './CoaPuzzlePeace.vue';
 
 import { City } from '../cities';
 import { Fragment } from './types';
-import { getImageSize } from '../utils';
 
 const props = defineProps({
   city: {
@@ -21,31 +20,30 @@ const props = defineProps({
   }
 });
 
-const width = 100;
+const width = 150;
 
 const fragments = ref([] as Fragment[]);
 const flips = ref([] as boolean[]);
-getImageSize(props.city.image, (size) => {
+
   let height;
-  if (size.height % 3 == 0) {
-    height = size.height / 6
-  } else if ((size.height + 1) % 3 == 0) {
-    height = (size.height + 1) / 6
+  if (props.city.imageSize.h % 3 == 0) {
+    height = props.city.imageSize.h / 6
+  } else if ((props.city.imageSize.h + 1) % 3 == 0) {
+    height = (props.city.imageSize.h + 1) / 6
   } else {
-    height = (size.height + 2) / 6
+    height = (props.city.imageSize.h + 2) / 6
   }
-  height = Math.floor(height) + (size.height % 2 == 0 ? 0 : 1);
+  height = Math.ceil(height);
 
-  for (let idx = 0; idx < 9; idx++) {
-
-    const offsetX = (idx % 3) * 100;
-    const offsetY = Math.floor(idx / 3) * height;
+  for (let idx = 0; idx < 6; idx++) {
+    const offsetX = (idx % 2) * width;
+    const offsetY = Math.floor(idx / 2) * height;
     fragments.value[idx] = { width, height, offsetX, offsetY, image: props.city.image };
     flips.value[idx] = false;
+    console.log(fragments.value[idx])
   }
-});
 
-const puzzleHeight = computed(() => (fragments.value.length > 0 ? fragments.value[0].height * 3 + 10 : 400) + 'px');
+const puzzleHeight = ref((3 * height) + 'px');
 
 </script>
 
@@ -61,3 +59,4 @@ const puzzleHeight = computed(() => (fragments.value.length > 0 ? fragments.valu
   display: block;
 }
 </style>
+../utils/utils
