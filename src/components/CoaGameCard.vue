@@ -1,17 +1,15 @@
 <template>
-  <Card class="game-card">
-    <template #header>
-      <div style="  padding-top: 20px;">
-        <CoaPuzzle class="mx-auto" />
-      </div>
+  <v-card class="game-card">
+    <CoaPuzzle class="mx-auto" />
 
-    </template>
-    <template #title>
-      <div class="p-inputgroup">
-        <AutoComplete v-model="selectedCity" optionLabel="name" :suggestions="items" @complete="search" forceSelection />
-        <Button :disabled="!canGuess" severity="success" label="Spėti" @click="check" />
-      </div>
-    </template>
+
+
+    <div class="p-inputgroup">
+      <v-autocomplete :items="items" item-title="name" v-model="selectedCity" return-object append-icon="mdi-check-outline" @keyup.enter="test" />
+      <AutoComplete v-model="selectedCity" optionLabel="name" :suggestions="items" @complete="search" forceSelection />
+      <Button :disabled="!canGuess" severity="success" label="Spėti" @click="check" />
+    </div>
+
     <template #content>
       <DataTable :value="guesses">
         <Column field="cityName" />
@@ -19,17 +17,14 @@
         <Column field="direction" />
       </DataTable>
     </template>
-  </Card>
+  </v-card>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
+import { VCard } from 'vuetify/components/VCard';
+import { VAutocomplete } from 'vuetify/components/VAutocomplete';
 
-import Card from 'primevue/card';
-import AutoComplete from 'primevue/autocomplete';
-import Button from 'primevue/button';
-import DataTable from 'primevue/datatable';
-import Column from 'primevue/column';
 
 import CoaPuzzle from './CoaPuzzle.vue';
 
@@ -54,15 +49,15 @@ function check() {
   guess(selectedCity.value);
   selectedCity.value = undefined
 }
+
+function test(){
+  console.log(selectedCity.value)
+}
 </script>
 
 <style scoped>
 .game-card {
   width: 350px;
-}
-
-:deep(thead.p-datatable-thead) {
-  display: none;
 }
 </style>
 

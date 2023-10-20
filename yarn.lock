@@ -324,6 +324,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue/devtools-api@npm:^6.5.0":
+  version: 6.5.1
+  resolution: "@vue/devtools-api@npm:6.5.1"
+  checksum: 3de9ff5ec78890c84d22c59910e26bf53140413895ba85b0e2a276609c24d9dde007cf468d9f21ef18389eaef75605fe94e79a761beb30d3bbb7af1ef19bbd4e
+  languageName: node
+  linkType: hard
+
 "@vue/language-core@npm:1.8.15":
   version: 1.8.15
   resolution: "@vue/language-core@npm:1.8.15"
@@ -1208,13 +1215,13 @@ __metadata:
     "@vitejs/plugin-vue": ^4.2.3
     geolib: ^3.3.4
     gh-pages: ^6.0.0
-    primeflex: ^3.3.1
-    primevue: ^3.36.0
+    pinia: ^2.1.7
     random: ^4.1.0
     typescript: ^5.0.2
     vite: ^4.4.5
     vue: ^3.3.4
     vue-tsc: ^1.8.5
+    vuetify: ^3.3.22
   languageName: unknown
   linkType: soft
 
@@ -1546,6 +1553,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pinia@npm:^2.1.7":
+  version: 2.1.7
+  resolution: "pinia@npm:2.1.7"
+  dependencies:
+    "@vue/devtools-api": ^6.5.0
+    vue-demi: ">=0.14.5"
+  peerDependencies:
+    "@vue/composition-api": ^1.4.0
+    typescript: ">=4.4.4"
+    vue: ^2.6.14 || ^3.3.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 1b7882aab2828ad209d3e76e06918c8811d04699c9308d372094cde6df485d7e7785f25a3bb5c6a3724aeaee3fb0082fae03c41a6657acd3486c7965a0a09d34
+  languageName: node
+  linkType: hard
+
 "pinkie-promise@npm:^2.0.0":
   version: 2.0.1
   resolution: "pinkie-promise@npm:2.0.1"
@@ -1579,22 +1605,6 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 1d8611341b073143ad90486fcdfeab49edd243377b1f51834dc4f6d028e82ce5190e4f11bb2633276864503654fb7cab28e67abdc0fbf9d1f88cad4a0ff0beea
-  languageName: node
-  linkType: hard
-
-"primeflex@npm:^3.3.1":
-  version: 3.3.1
-  resolution: "primeflex@npm:3.3.1"
-  checksum: 3811f48d9b453141a13bdbfb17f272d01a0bb02fc507d4b77dcd5471feccd4d9e80f10f67dfdfc8571672a568c1aadf03179dd6a4d8536b3f60f7fa060e5bfad
-  languageName: node
-  linkType: hard
-
-"primevue@npm:^3.36.0":
-  version: 3.36.0
-  resolution: "primevue@npm:3.36.0"
-  peerDependencies:
-    vue: ^3.0.0
-  checksum: e5aca69693a641d6badae7516e3e1c0e57d171b5c71c21f9126cf8846225c6855076139ec78b50a844d035e7d9a92e312d968f06546eb5cab6ba437cd382af78
   languageName: node
   linkType: hard
 
@@ -1962,6 +1972,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vue-demi@npm:>=0.14.5":
+  version: 0.14.6
+  resolution: "vue-demi@npm:0.14.6"
+  peerDependencies:
+    "@vue/composition-api": ^1.0.0-rc.1
+    vue: ^3.0.0-0 || ^2.6.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  bin:
+    vue-demi-fix: bin/vue-demi-fix.js
+    vue-demi-switch: bin/vue-demi-switch.js
+  checksum: 424b1f340d5111fc4d4a0f8042c14ae836ba983bc968773a6d955d6846202d7e6f951993ac1525be8732b0cfe0c81d94ab88f427c97bfa86ead08db06491279b
+  languageName: node
+  linkType: hard
+
 "vue-template-compiler@npm:^2.7.14":
   version: 2.7.14
   resolution: "vue-template-compiler@npm:2.7.14"
@@ -1997,6 +2023,28 @@ __metadata:
     "@vue/server-renderer": 3.3.4
     "@vue/shared": 3.3.4
   checksum: 58b6c62a66a375ce5df460fcb7ba41b37c8637c635faf06ef472ae4197f412cf9ad83586cd8e3f66c486404fbe8550e694f90ff724a571d1ba78830791099c59
+  languageName: node
+  linkType: hard
+
+"vuetify@npm:^3.3.22":
+  version: 3.3.22
+  resolution: "vuetify@npm:3.3.22"
+  peerDependencies:
+    typescript: ">=4.7"
+    vite-plugin-vuetify: ^1.0.0-alpha.12
+    vue: ^3.2.0
+    vue-i18n: ^9.0.0
+    webpack-plugin-vuetify: ^2.0.0-alpha.11
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+    vite-plugin-vuetify:
+      optional: true
+    vue-i18n:
+      optional: true
+    webpack-plugin-vuetify:
+      optional: true
+  checksum: bdc425fbb3f454d36086793350c2d543f0fb77a3d2f00814146f6f242fca18916e848acc9248b91f9e1293ce3fdc90e28295004445f2f272f7caf6e0c75b736f
   languageName: node
   linkType: hard
 

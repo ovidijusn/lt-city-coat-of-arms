@@ -1,10 +1,12 @@
 import { createApp } from 'vue'
-import "primeflex/primeflex.css";
-import 'primevue/resources/themes/bootstrap4-light-blue/theme.css'
-import PrimeVue from 'primevue/config';
-import './assets/style.css'
-import App from './App.vue'
+import 'vuetify/styles';
+import { createVuetify } from 'vuetify';
+
+import './assets/style.css';
+import App from './App.vue';
+
+const vuetify = createVuetify({})
 
 createApp(App)
-    .use(PrimeVue)
+    .use(vuetify)
     .mount('#app')
