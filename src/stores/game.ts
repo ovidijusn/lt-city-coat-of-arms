@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia';
-import { computed, reactive, ref } from 'vue';
 
 import { seed, chooseRandom } from '@/utils/random';
 import { cities } from '@/cities';
@@ -32,15 +31,30 @@ function createState(): State {
 }
 
 export const useGameStore = defineStore('game', {
-    state: () => createState(),
+    state: (): State => {
+        return { dateKey: "", cityName: "", flipSequence: [], guesses: [] };
+    },
     getters: {
-        
+        ready: (state) => !!state.cityName,
+        flipped: (state) => state.flipSequence.slice(0, state.guesses.length + 1),
+        won: (state) => state.guesses.includes(state.cityName),
+        loose: (state) => state.guesses.length === 6 && !state.guesses.includes(state.cityName)
     },
     actions: {
+        resetIfNeeded() {
+            if (this.dateKey !== seed) {
+                const { dateKey, cityName, flipSequence, guesses } = createState();
+                this.dateKey = dateKey;
+                this.cityName = cityName;
+                this.flipSequence = flipSequence;
+                this.guesses = guesses;
+            }
+        },
         addGuess(cityName: string) {
-            this.guesses.push(cityName);
+            if (this.guesses.length < 6) {
+                this.guesses.push(cityName);
+            }
         }
-    }
-
-    , persist: true
+    },
+    persist: true
 });
