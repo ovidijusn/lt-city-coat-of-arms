@@ -424,6 +424,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vuetify/loader-shared@npm:^1.7.1":
+  version: 1.7.1
+  resolution: "@vuetify/loader-shared@npm:1.7.1"
+  dependencies:
+    find-cache-dir: ^3.3.2
+    upath: ^2.0.1
+  peerDependencies:
+    vue: ^3.0.0
+    vuetify: ^3.0.0-beta.4
+  checksum: 5777955e593afbb947c8be28a8625021846901e16ab982edfbbb74d9beb15f95490390ab1b0c6ec47e8b05389547eb69c79173cca04389f0203795071bb04994
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:^1.0.0":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -853,7 +866,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-cache-dir@npm:^3.3.1":
+"find-cache-dir@npm:^3.3.1, find-cache-dir@npm:^3.3.2":
   version: 3.3.2
   resolution: "find-cache-dir@npm:3.3.2"
   dependencies:
@@ -1216,9 +1229,11 @@ __metadata:
     geolib: ^3.3.4
     gh-pages: ^6.0.0
     pinia: ^2.1.7
+    pinia-plugin-persistedstate: ^3.2.0
     random: ^4.1.0
     typescript: ^5.0.2
     vite: ^4.4.5
+    vite-plugin-vuetify: ^1.0.2
     vue: ^3.3.4
     vue-tsc: ^1.8.5
     vuetify: ^3.3.22
@@ -1550,6 +1565,15 @@ __metadata:
   version: 2.3.0
   resolution: "pify@npm:2.3.0"
   checksum: 9503aaeaf4577acc58642ad1d25c45c6d90288596238fb68f82811c08104c800e5a7870398e9f015d82b44ecbcbef3dc3d4251a1cbb582f6e5959fe09884b2ba
+  languageName: node
+  linkType: hard
+
+"pinia-plugin-persistedstate@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "pinia-plugin-persistedstate@npm:3.2.0"
+  peerDependencies:
+    pinia: ^2.0.0
+  checksum: c558b83cdd59e45956f328c34f0b067471dda122ed26555646107ebca5201d94c035ffaf3b400cae26020ad1be8978716f1f538653d6b90f23760c2f7ccbce82
   languageName: node
   linkType: hard
 
@@ -1925,10 +1949,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"upath@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "upath@npm:2.0.1"
+  checksum: 2db04f24a03ef72204c7b969d6991abec9e2cb06fb4c13a1fd1c59bc33b46526b16c3325e55930a11ff86a77a8cbbcda8f6399bf914087028c5beae21ecdb33c
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:^1.0.1":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
+  languageName: node
+  linkType: hard
+
+"vite-plugin-vuetify@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "vite-plugin-vuetify@npm:1.0.2"
+  dependencies:
+    "@vuetify/loader-shared": ^1.7.1
+    debug: ^4.3.3
+    upath: ^2.0.1
+  peerDependencies:
+    vite: ^2.7.0 || ^3.0.0 || ^4.0.0
+    vuetify: ^3.0.0-beta.4
+  checksum: 262759ee5bb364fac453c71a2523bf4476421d50c4c80e0a54569e7a7c0dc12fe70ccd890ebfed19adb3d37e9f2b82b7691e99bfea0e01b32f1493a9d76d942f
   languageName: node
   linkType: hard
 

@@ -1,18 +1,18 @@
 <template>
   <div class="flipping-board">
+    <!--
     <CoaPuzzlePeace v-for="(fragment, idx) in fragments" class="fragment" :fragment="fragment" :flipped="flipped(idx)"
       :style="{ top: `${fragment.offsetY}px`, left: `${fragment.offsetX}px` }" />
+      -->
   </div>
 </template>
 
 <script setup lang="ts">
+/*
 import { ref } from 'vue';
 
 import CoaPuzzlePeace from './CoaPuzzlePeace.vue';
 import { Fragment } from '@/types';
-import { getGameState, getFragmentState } from '@/game';
-
-const gameState = getGameState()
 
 const width = 150;
 
@@ -40,13 +40,16 @@ function flipped(idx: number): boolean {
   return getFragmentState(idx)?.flipped || false;
 }
 
+
+height: v-bind(puzzleHeight);
+*/
 </script>
 
 <style scoped>
 .flipping-board {
   position: relative;
   width: 300px;
-  height: v-bind(puzzleHeight);
+  
 }
 
 .flipping-board>.fragment {
@@ -54,4 +57,3 @@ function flipped(idx: number): boolean {
   display: block;
 }
 </style>
-../utils/utils
