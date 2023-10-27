@@ -22,7 +22,7 @@ import { useGameStore } from '@/stores/game';
 const gameStore = useGameStore();
 const city = gameStore.city
 
-const width = ref(300);
+const width = ref(200);
 const height = computed(() => Math.ceil((width.value * city.imageSize.h) / city.imageSize.w));
 const imgContent = computed(() => `url(${city.image})`);
 
@@ -91,6 +91,6 @@ function flipped(idx: number): boolean {
 
 img.coat-of-arms {
   position: relative;
-  width: 300px;
+  width: 200px;
 }
 </style>
