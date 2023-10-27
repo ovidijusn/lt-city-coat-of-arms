@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@mdi/font", "npm:7.3.67"],\
             ["@vitejs/plugin-vue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.0"],\
             ["geolib", "npm:3.3.4"],\
             ["gh-pages", "npm:6.0.0"],\
@@ -311,6 +312,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@jridgewell-sourcemap-codec-npm-1.4.15-a055fb62cf-b881c7e503.zip/node_modules/@jridgewell/sourcemap-codec/",\
           "packageDependencies": [\
             ["@jridgewell/sourcemap-codec", "npm:1.4.15"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@mdi/font", [\
+        ["npm:7.3.67", {\
+          "packageLocation": "./.yarn/cache/@mdi-font-npm-7.3.67-d705f72913-34af78e108.zip/node_modules/@mdi/font/",\
+          "packageDependencies": [\
+            ["@mdi/font", "npm:7.3.67"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1467,6 +1477,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["lt-city-coat-of-arms", "workspace:."],\
+            ["@mdi/font", "npm:7.3.67"],\
             ["@vitejs/plugin-vue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.0"],\
             ["geolib", "npm:3.3.4"],\
             ["gh-pages", "npm:6.0.0"],\

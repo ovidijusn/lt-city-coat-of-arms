@@ -18,7 +18,7 @@ const items = computed(() => [
   { title: 'City', value: gameStore.cityName },
   { title: 'To Flip', value: gameStore.flipSequence.join(', ') },
   { title: 'Flipped', value: gameStore.flipped.join(', ') },
-  { title: 'Flipped', value: gameStore.guesses.join(', ') },
+  { title: 'Guesses', value: gameStore.guesses.join(', ') },
   { title: 'Ended', value: gameStore.ended },
   { title: 'Won', value: gameStore.won },
   { title: 'Lost', value: gameStore.lost },

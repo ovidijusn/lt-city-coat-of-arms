@@ -214,6 +214,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdi/font@npm:^7.3.67":
+  version: 7.3.67
+  resolution: "@mdi/font@npm:7.3.67"
+  checksum: 34af78e108b1cbf30760a062a0d4c25e58fb13b719cef535b96116c6f522f877f19448d4389dac87176bd3bbca240b9f721b1b01599f0b333311edbff5d2fba9
+  languageName: node
+  linkType: hard
+
 "@npmcli/fs@npm:^3.1.0":
   version: 3.1.0
   resolution: "@npmcli/fs@npm:3.1.0"
@@ -1225,6 +1232,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "lt-city-coat-of-arms@workspace:."
   dependencies:
+    "@mdi/font": ^7.3.67
     "@vitejs/plugin-vue": ^4.2.3
     geolib: ^3.3.4
     gh-pages: ^6.0.0

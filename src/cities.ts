@@ -1,10 +1,10 @@
-import akmeneImg from './emblems/akmene.png';
-import alytusImg from './emblems/alytus.png';
-import anyksciaiImg from './emblems/anyksciai.png';
-import ariogalaImg from './emblems/ariogala.png';
-import baltoji_vokeImg from './emblems/baltoji_voke.png';
-import birstonasImg from './emblems/birstonas.png';
-import birzaiImg from './emblems/birzai.png';
+import akmeneImg from '@/assets/emblems/akmene.png';
+import alytusImg from '@/assets/emblems/alytus.png';
+import anyksciaiImg from '@/assets/emblems/anyksciai.png';
+import ariogalaImg from '@/assets/emblems/ariogala.png';
+import baltoji_vokeImg from '@/assets/emblems/baltoji_voke.png';
+import birstonasImg from '@/assets/emblems/birstonas.png';
+import birzaiImg from '@/assets/emblems/birzai.png';
 
 import { City, Size } from '@/types';
 
@@ -12,7 +12,9 @@ function defaultWidth(h: number): Size {
     return { w: 600, h };
 }
 
-
+export function cityByName(cityName: string): City | undefined {
+    return cities.find((city) => city.name === cityName);
+}
 
 export const cities: City[] = [
     {
@@ -80,4 +82,6 @@ export const cities: City[] = [
         },
         imageSize: defaultWidth(705)
     }
-]
+];
+
+console.log(cities)

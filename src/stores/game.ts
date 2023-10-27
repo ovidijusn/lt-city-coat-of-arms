@@ -1,20 +1,20 @@
 import { defineStore } from 'pinia';
 
 import { seed, chooseRandom } from '@/utils/random';
-import { cities } from '@/cities';
+import { cities, cityByName } from '@/cities';
 
 interface State {
     dateKey: string,
     cityName: string,
     flipSequence: number[],
-    guesses: string[]
+    guesses: string[],
 }
 
 function createState(): State {
     console.log('Init Game state')
     const city = chooseRandom(cities);
     const flipSequence: number[] = [];
-    const orderSequece = [0, 1, 2, 3, 4, 5, 6];
+    const orderSequece = [0, 1, 2, 3, 4, 5];
 
     while (orderSequece.length > 0) {
         const idx = chooseRandom(orderSequece);
@@ -39,7 +39,9 @@ export const useGameStore = defineStore('game', {
         flipped: (state) => state.flipSequence.slice(0, state.guesses.length + 1),
         ended: (state) => state.guesses.length === 6 || state.guesses.includes(state.cityName),
         won: (state) => state.guesses.includes(state.cityName),
-        lost: (state) => state.guesses.length === 6 && !state.guesses.includes(state.cityName)
+        lost: (state) => state.guesses.length === 6 && !state.guesses.includes(state.cityName),
+
+        city:(state) => cityByName(state.cityName)
     },
     actions: {
         resetIfNeeded() {
