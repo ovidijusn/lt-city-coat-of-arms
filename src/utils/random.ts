@@ -7,6 +7,11 @@ function genSeed(): string {
     seed += (today.getMonth() + 1 > 9 ? '' : '0') + (today.getMonth() + 1);
     seed += (today.getDate() > 9 ? '' : '0') + today.getDate();
 
+    if ('development' === import.meta.env.MODE) {
+        seed += (today.getHours() > 9 ? '' : '0') + today.getHours();
+        seed += (today.getMinutes() > 9 ? '' : '0') + today.getMinutes();
+    }
+
     return seed;
 }
 export const seed = genSeed();

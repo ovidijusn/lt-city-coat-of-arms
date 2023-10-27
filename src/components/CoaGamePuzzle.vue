@@ -38,7 +38,7 @@ function pLeft(idx: number): string {
 }
 
 function flipped(idx: number): boolean {
-  return gameStore.flipped.includes(idx - 1);
+  return gameStore.won ? true : gameStore.flipped.includes(idx - 1);
 }
 
 </script>
