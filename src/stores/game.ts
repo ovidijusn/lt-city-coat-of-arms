@@ -37,8 +37,9 @@ export const useGameStore = defineStore('game', {
     getters: {
         ready: (state) => !!state.cityName,
         flipped: (state) => state.flipSequence.slice(0, state.guesses.length + 1),
+        ended: (state) => state.guesses.length === 6 || state.guesses.includes(state.cityName),
         won: (state) => state.guesses.includes(state.cityName),
-        loose: (state) => state.guesses.length === 6 && !state.guesses.includes(state.cityName)
+        lost: (state) => state.guesses.length === 6 && !state.guesses.includes(state.cityName)
     },
     actions: {
         resetIfNeeded() {

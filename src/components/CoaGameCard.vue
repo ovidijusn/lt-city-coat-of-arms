@@ -1,14 +1,8 @@
 <template>
   <v-card class="game-card">
+    TBD
     <!-- <CoaPuzzle class="mx-auto" /> -->
 
-    {{ gameStore.ready }}
-<br>
-{{ gameStore.cityName }}
-<br>
-{{ gameStore.guesses }}
-<br>
-win: {{ gameStore.won }}, loose: {{ gameStore.won  }}
     <div>
       <!--
       <v-autocomplete :items="items" item-title="name" v-model="selectedCity" return-object append-icon="mdi-check-outline" @keyup.enter="test" />
