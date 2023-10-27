@@ -11,8 +11,8 @@
       <tbody>
         <tr v-for="guess in guesses">
           <td>{{ guess.cityName }}</td>
-          <td></td>
-          <td>{{guess.arrow}}</td>
+            <td>{{ guess.distance ? (guess.distance + 'km') : 0 }}</td>
+            <td>{{ guess.arrow }}</td>
         </tr>
       </tbody>
     </v-table>
@@ -20,18 +20,22 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
 import { useGameStore } from '@/stores/game';
-import { cityByName } from '@/cities';
-import { emojiDirection } from '@/utils/map';
+import { useCityStore } from '@/stores/city';
+import { emojiDirection, distanceBetween } from '@/utils/map';
+import { CityName } from '@/types';
 
 const gameStore = useGameStore();
-const city = computed(() => cityByName(gameStore.cityName));
-function _arrow(cityName) {
-  const guessCity = cityByName(cityName);
-  return emojiDirection(guessCity, city.value)
+const cityStore = useCityStore();
+
+function _row(cityName: CityName) {
+  const guessCity = cityStore.city(cityName);
+  const arrow = emojiDirection(guessCity, gameStore.city);
+  const distance = Math.round(distanceBetween(guessCity, gameStore.city));
+  return { cityName, arrow, distance };
 }
-const guesses = computed(() => gameStore.guesses.map((cityName) => ({ cityName, arrow: _arrow(cityName) })));
+const guesses = computed(() => gameStore.guesses.map((cityName) => _row(cityName)));
 
 </script>
 

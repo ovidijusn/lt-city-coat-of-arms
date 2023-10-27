@@ -1,7 +1,7 @@
 import { getDistance, getCompassDirection, getRhumbLineBearing } from 'geolib';
 import { City } from '@/types';
 
-export function distance(city1: City, city2: City): number {
+export function distanceBetween(city1: City, city2: City): number {
     return Math.round(getDistance(city1.location, city2.location, 1) / 1000)
 }
 
@@ -52,7 +52,7 @@ const ranges = [
 ]
 
 export function emojiDirection(from: City, to: City): string | undefined {
-    if(from.name === to.name){
+    if (from.location.latitude === to.location.latitude && from.location.longitude === to.location.longitude) {
         return '🎯';
     }
     const angle = getRhumbLineBearing(from.location, to.location);

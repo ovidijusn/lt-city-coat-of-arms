@@ -8,9 +8,12 @@ export type Size = {
     h: number
 };
 
+
+export type CityName = 'Akmenė' | 'Ariogala' | 'Alytus' | 'Anykščiai' | 'Baltoji Vokė' | 'Birštonas' | 'Biržai';
+
 export type City = {
-    name: string,
     image: string,
     imageSize: Size,
     location: Location
 };
+

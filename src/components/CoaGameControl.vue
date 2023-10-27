@@ -10,12 +10,14 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useGameStore } from '@/stores/game';
-import { cities } from '@/cities';
+import { useCityStore } from '@/stores/city';
+import { CityName } from '@/types';
 
 const gameStore = useGameStore();
+const cityStore = useCityStore();
 const city = ref('');
 const canGuess = computed(() => city.value && !gameStore.ended);
-const cityNames = computed(() => cities.map((city) => city.name).filter((name) => !gameStore.guesses.includes(name)));
+const cityNames = computed(() => cityStore.allNames.filter((name) => !gameStore.guesses.includes(name)));
 
 function cityFilter(title: string, query: string): boolean {
   console.log(title, query)
@@ -24,7 +26,7 @@ function cityFilter(title: string, query: string): boolean {
 
 function guess() {
   if (!gameStore.ended) {
-    gameStore.addGuess(city.value);
+    gameStore.addGuess(city.value as CityName);
     city.value = '';
   }
 }
