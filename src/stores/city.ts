@@ -10,6 +10,7 @@ import ariogalaImg from '@/assets/emblems/ariogala.png';
 import baltoji_vokeImg from '@/assets/emblems/baltoji_voke.png';
 import birstonasImg from '@/assets/emblems/birstonas.png';
 import birzaiImg from '@/assets/emblems/birzai.png';
+import daugaiImg from '@/assets/emblems/daugai.png';
 
 type State = { [key in CityName]: City };
 
@@ -26,6 +27,14 @@ export const useCityStore = defineStore('city', {
 });
 
 const cities = {
+    'Daugai': {
+        image: daugaiImg,
+        location: {
+            latitude: 54.36,
+            longitude: 24.346,
+        },
+        imageSize: { w: 600, h: 722 }
+    },
     'Akmenė': {
         image: akmeneImg,
         location: {
