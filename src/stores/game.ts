@@ -13,9 +13,15 @@ interface State {
     guesses: CityName[],
 }
 
-function createState(): State {
-    console.log('Init Game state')
-    const city = chooseRandom(useCityStore().allNames as CityName[]);
+function createState(cityName: CityName | undefined): State {
+    console.log('Init Game state', cityName);
+    let city;
+    if (cityName) {
+        city = cityName;
+    } else {
+        city = chooseRandom(useCityStore().allNames as CityName[]);
+    }
+
     const flipSequence: number[] = [];
     const orderSequece = [0, 1, 2, 3, 4, 5];
 
@@ -51,13 +57,23 @@ export const useGameStore = defineStore('game', {
     actions: {
         resetIfNeeded() {
             if (this.dateKey !== seed) {
-                const { dateKey, cityName, flipSequence, flipped, guesses } = createState();
+                const { dateKey, cityName, flipSequence, flipped, guesses } = createState(undefined);
                 this.dateKey = dateKey;
                 this.cityName = cityName;
                 this.flipSequence = flipSequence;
                 this.flipped = flipped;
                 this.guesses = guesses;
             }
+        },
+        changeCity(cityName: CityName) {
+            const { dateKey, flipSequence, flipped, guesses } = createState(cityName);
+            console.log(this)
+            this.dateKey = dateKey;
+            this.cityName = cityName;
+            this.flipSequence = flipSequence;
+            this.flipped = flipped;
+            this.guesses = guesses;
+            console.log(this)
         },
         addGuess(cityName: CityName) {
             if (this.guesses.length < 6) {

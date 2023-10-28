@@ -2,9 +2,9 @@
     <v-app>
         <v-container>
             <v-main class="d-flex align-center justify-center">
-                <CoaGameCard class="mx-auto"/>
+                <CoaGameCard class="mx-auto" />
             </v-main>
-            <v-footer v-if="isDev">
+            <v-footer class="mt-2" v-if="isDev">
                 <CoaDebugCard />
             </v-footer>
         </v-container>

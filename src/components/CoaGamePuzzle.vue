@@ -1,13 +1,13 @@
 <template>
   <div class="flipping-board mx-auto" :style="{ height: height + 'px', width: width + 'px' }">
-    <div v-for="idx in 6" class="flip-card" :class="{flipped:flipped(idx)}"
+    <div v-for="idx in 6" class="flip-card" :class="{ flipped: flipped(idx) }"
       :style="{ height: pHeight + 'px', width: pWidth + 'px', left: pLeft(idx), top: pTop(idx) }">
       <div class="flip-card-inner">
         <div class="flip-card-front">
 
         </div>
         <div class="flip-card-back">
-            <img class="coat-of-arms" :width="width" :height="height" draggable="false"
+          <img class="coat-of-arms" :width="width" :height="height" draggable="false"
             :style="{ content: imgContent, right: pLeft(idx), bottom: pTop(idx) }" />
         </div>
       </div>
@@ -20,11 +20,10 @@ import { computed, ref } from 'vue';
 import { useGameStore } from '@/stores/game';
 
 const gameStore = useGameStore();
-const city = gameStore.city
 
 const width = ref(200);
-const height = computed(() => Math.ceil((width.value * city.imageSize.h) / city.imageSize.w));
-const imgContent = computed(() => `url(${city.image})`);
+const height = computed(() => Math.ceil((width.value * gameStore.city.imageSize.h) / gameStore.city.imageSize.w));
+const imgContent = computed(() => `url(${gameStore.city.image})`);
 
 const pWidth = computed(() => Math.ceil(width.value / 2));
 const pHeight = computed(() => Math.ceil(height.value / 3));
