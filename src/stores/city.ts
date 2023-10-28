@@ -47,6 +47,16 @@ import imgKudirkosNaumiestis from '@/assets/emblems/Kudirkos_Naumiestis.png';
 import imgKupiskis from '@/assets/emblems/Kupiškis.png';
 import imgKursenai from '@/assets/emblems/Kuršėnai.png';
 
+import imgLazdijai from '@/assets/emblems/Lazdijai.png';
+import imgLentvaris from '@/assets/emblems/Lentvaris.png';
+import imgLinkuva from '@/assets/emblems/Linkuva.png';
+import imgMarijampole from '@/assets/emblems/Marijampolė.png';
+import imgMazeikiai from '@/assets/emblems/Mažeikiai.png';
+import imgMoletai from '@/assets/emblems/Molėtai.png';
+import imgNaujojiAkmene from '@/assets/emblems/Naujoji_Akmenė.png';
+import imgNemencine from '@/assets/emblems/Nemenčinė.png';
+import imgNeringa from '@/assets/emblems/Neringa.png';
+
 type State = { [key in CityName]: City };
 
 export const useCityStore = defineStore('city', {
@@ -62,6 +72,78 @@ export const useCityStore = defineStore('city', {
 });
 
 const cities = {
+    'Neringa': {
+        image: imgNeringa,
+        location: {
+            latitude: 55.306,
+            longitude: 20.996,
+        },
+        imageSize: { w: 600, h: 726 }
+    },
+    'Nemenčinė': {
+        image: imgNemencine,
+        location: {
+            latitude: 54.848,
+            longitude: 25.469,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Naujoji Akmenė': {
+        image: imgNaujojiAkmene,
+        location: {
+            latitude: 56.325,
+            longitude: 22.88,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Molėtai': {
+        image: imgMoletai,
+        location: {
+            latitude: 55.232,
+            longitude: 25.419,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Mažeikiai': {
+        image: imgMazeikiai,
+        location: {
+            latitude: 56.311,
+            longitude: 22.348,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Marijampolė': {
+        image: imgMarijampole,
+        location: {
+            latitude: 54.556,
+            longitude: 23.35,
+        },
+        imageSize: { w: 600, h: 724 }
+    },
+    'Linkuva': {
+        image: imgLinkuva,
+        location: {
+            latitude: 56.086,
+            longitude: 23.974,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Lentvaris': {
+        image: imgLentvaris,
+        location: {
+            latitude: 54.643,
+            longitude: 25.05,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Lazdijai': {
+        image: imgLazdijai,
+        location: {
+            latitude: 54.235,
+            longitude: 23.511,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
     'Kuršėnai': {
         image: imgKursenai,
         location: {

@@ -10,7 +10,10 @@ export type Size = {
 
 
 export type CityName =
-    'Kuršėnai' |
+    'Neringa' |
+    'Nemenčinė' | 'Naujoji Akmenė' | 'Molėtai' |
+    'Mažeikiai' | 'Marijampolė' | 'Linkuva' |
+    'Lentvaris' | 'Lazdijai' | 'Kuršėnai' |
     'Kupiškis' | 'Kudirkos Naumiestis' | 'Kretinga' |
     'Klaipėda' | 'Kybartai' | 'Kelmė' |
     'Kėdainiai' | 'Kazlų Rūda' | 'Kavarskas' |
