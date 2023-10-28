@@ -35,6 +35,7 @@
 
         <v-card-actions>
           <v-btn prepend-icon="mdi-share-variant" @click="share">Dalintis</v-btn>
+          <v-snackbar v-model="copied" color="info" timeout="2000">Resultas nukopijuotas</v-snackbar>
         </v-card-actions>
       </v-card>
     </template>
@@ -49,6 +50,7 @@ import { useStatsStore } from '@/stores/stats';
 const gameStore = useGameStore();
 const statsStore = useStatsStore();
 const opened = ref(true);
+const copied = ref(false);
 
 const colors = ['green', 'light-green', 'lime', 'amber', 'orange', 'red']
 function _redOrGreen(idx: number): string {
@@ -69,6 +71,7 @@ ${_puzzle()}
 ${url}`;
 
   navigator.clipboard.writeText(text);
+  copied.value = true;
 }
 </script>
 

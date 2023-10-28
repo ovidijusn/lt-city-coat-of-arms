@@ -7,7 +7,7 @@
 
         </div>
         <div class="flip-card-back">
-          <img class="coat-of-arms" :width="width" draggable="false"
+            <img class="coat-of-arms" :width="width" :height="height" draggable="false"
             :style="{ content: imgContent, right: pLeft(idx), bottom: pTop(idx) }" />
         </div>
       </div>
