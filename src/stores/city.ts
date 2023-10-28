@@ -14,17 +14,17 @@ import birzaiImg from '@/assets/emblems/Biržai.png';
 
 import daugaiImg from '@/assets/emblems/daugai.png';
 import imgDruskininkai from '@/assets/emblems/Druskininkai.png';
-import imgDukstas from '@/assets/emblems/dukstas.jpg';
-import imgDusetos from '@/assets/emblems/Dusetos.jpg';
+import imgDukstas from '@/assets/emblems/dukstas.png';
+import imgDusetos from '@/assets/emblems/Dusetos.png';
 
-import imgEisiskes from '@/assets/emblems/Eišiškės.jpg';
-import imgElektrenai from '@/assets/emblems/Elektrėnai.jpg';
-import imgEzerelis from '@/assets/emblems/Ežerėlis.jpg';
+import imgEisiskes from '@/assets/emblems/Eišiškės.png';
+import imgElektrenai from '@/assets/emblems/Elektrėnai.png';
+import imgEzerelis from '@/assets/emblems/Ežerėlis.png';
 
-import imgGargzdai from '@/assets/emblems/Gargždai.jpg';
-import imgGarliava from '@/assets/emblems/Garliava.jpg';
-import imgGelgaudiskis from '@/assets/emblems/Gelgaudiškis.jpg';
-import imgGrigiskes from '@/assets/emblems/Grigiškės.jpg';
+import imgGargzdai from '@/assets/emblems/Gargždai.png';
+import imgGarliava from '@/assets/emblems/Garliava.png';
+import imgGelgaudiskis from '@/assets/emblems/Gelgaudiškis.png';
+import imgGrigiskes from '@/assets/emblems/Grigiškės.png';
 
 type State = { [key in CityName]: City };
 
