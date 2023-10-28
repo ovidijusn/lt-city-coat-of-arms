@@ -33,6 +33,20 @@ import imgJoniskelis from '@/assets/emblems/Joniškėlis.png';
 import imgJoniskis from '@/assets/emblems/Joniškis.png';
 import imgJurbarkas from '@/assets/emblems/Jurbarkas.png';
 
+import imgKaisiadorys from '@/assets/emblems/Kaišiadorys.png';
+import imgKalvarija from '@/assets/emblems/Kalvarija.png';
+import imgKaunas from '@/assets/emblems/Kaunas.png';
+import imgKavarskas from '@/assets/emblems/Kavarskas.png';
+import imgKazluRuda from '@/assets/emblems/Kazlų_Rūda.png';
+import imgKedainiai from '@/assets/emblems/Kėdainiai.png';
+import imgKelme from '@/assets/emblems/Kelmė.png';
+import imgKybartai from '@/assets/emblems/Kybartai.png';
+import imgKlaipeda from '@/assets/emblems/Klaipėda.png';
+import imgKretinga from '@/assets/emblems/Kretinga.png';
+import imgKudirkosNaumiestis from '@/assets/emblems/Kudirkos_Naumiestis.png';
+import imgKupiskis from '@/assets/emblems/Kupiškis.png';
+import imgKursenai from '@/assets/emblems/Kuršėnai.png';
+
 type State = { [key in CityName]: City };
 
 export const useCityStore = defineStore('city', {
@@ -48,6 +62,110 @@ export const useCityStore = defineStore('city', {
 });
 
 const cities = {
+    'Kuršėnai': {
+        image: imgKursenai,
+        location: {
+            latitude: 56.004,
+            longitude: 22.933,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Kupiškis': {
+        image: imgKupiskis,
+        location: {
+            latitude: 55.839,
+            longitude: 24.976,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Kudirkos Naumiestis': {
+        image: imgKudirkosNaumiestis,
+        location: {
+            latitude: 54.774,
+            longitude: 22.863,
+        },
+        imageSize: { w: 600, h: 416 }
+    },
+    'Kretinga': {
+        image: imgKretinga,
+        location: {
+            latitude: 55.89,
+            longitude: 21.242,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Klaipėda': {
+        image: imgKlaipeda,
+        location: {
+            latitude: 55.713,
+            longitude: 21.135,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Kybartai': {
+        image: imgKybartai,
+        location: {
+            latitude: 54.643,
+            longitude: 22.751,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Kelmė': {
+        image: imgKelme,
+        location: {
+            latitude: 55.629,
+            longitude: 22.931,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Kėdainiai': {
+        image: imgKedainiai,
+        location: {
+            latitude: 55.289,
+            longitude: 23.976,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Kazlų Rūda': {
+        image: imgKazluRuda,
+        location: {
+            latitude: 54.752,
+            longitude: 23.499,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Kavarskas': {
+        image: imgKavarskas,
+        location: {
+            latitude: 55.434,
+            longitude: 24.928,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Kaunas': {
+        image: imgKaunas,
+        location: {
+            latitude: 54.898,
+            longitude: 23.904,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Kalvarija': {
+        image: imgKalvarija,
+        location: {
+            latitude: 54.414,
+            longitude: 23.227,
+        },
+        imageSize: { w: 600, h: 719 }
+    },
+    'Kaišiadorys': {
+        image: imgKaisiadorys,
+        location: {
+            latitude: 54.86,
+            longitude: 24.454,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
     'Jurbarkas': {
         image: imgJurbarkas,
         location: {
@@ -207,7 +325,7 @@ const cities = {
             latitude: 55.526,
             longitude: 25.106
         },
-        imageSize: { w: 600, h: 725 }
+        imageSize: { w: 600, h: 573 }
     },
     'Ariogala': {
         image: ariogalaImg,
@@ -240,7 +358,7 @@ const cities = {
             latitude: 56.2,
             longitude: 24.757
         },
-        imageSize: { w: 600, h: 724 }
+        imageSize: { w: 600, h: 662 }
     }
 
 };

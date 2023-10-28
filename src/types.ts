@@ -10,30 +10,19 @@ export type Size = {
 
 
 export type CityName =
-    'Jurbarkas' |
-    'Joniškis' |
-    'Joniškėlis' |
-    'Jonava' |
-    'Jieznas' |
-    'Ignalina' |
-    'Grigiškės' |
-    'Gelgaudiškis' |
-    'Garliava' |
-    'Gargždai' |
-    'Ežerėlis' |
-    'Elektrėnai' |
-    'Eišiškės' |
-    'Dusetos' |
-    'Dūkštas' |
-    'Druskininkai' |
-    'Daugai' |
-    'Akmenė' |
-    'Ariogala' |
-    'Alytus' |
-    'Anykščiai' |
-    'Baltoji Vokė' |
-    'Birštonas' |
-    'Biržai';
+    'Kuršėnai' |
+    'Kupiškis' | 'Kudirkos Naumiestis' | 'Kretinga' |
+    'Klaipėda' | 'Kybartai' | 'Kelmė' |
+    'Kėdainiai' | 'Kazlų Rūda' | 'Kavarskas' |
+    'Kaunas' | 'Kalvarija' | 'Kaišiadorys' |
+    'Jurbarkas' | 'Joniškis' | 'Joniškėlis' |
+    'Jonava' | 'Jieznas' | 'Ignalina' |
+    'Grigiškės' | 'Gelgaudiškis' | 'Garliava' |
+    'Gargždai' | 'Ežerėlis' | 'Elektrėnai' |
+    'Eišiškės' | 'Dusetos' | 'Dūkštas' |
+    'Druskininkai' | 'Daugai' | 'Akmenė' |
+    'Ariogala' | 'Alytus' | 'Anykščiai' |
+    'Baltoji Vokė' | 'Birštonas' | 'Biržai';
 
 export type City = {
     image: string,
