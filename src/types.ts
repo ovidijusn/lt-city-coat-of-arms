@@ -9,7 +9,25 @@ export type Size = {
 };
 
 
-export type CityName = 'Akmenė' | 'Ariogala' | 'Alytus' | 'Anykščiai' | 'Baltoji Vokė' | 'Birštonas' | 'Biržai';
+export type CityName =
+    'Grigiškės' |
+    'Gelgaudiškis' |
+    'Garliava' |
+    'Gargždai' |
+    'Ežerėlis' |
+    'Elektrėnai' |
+    'Eišiškės' |
+    'Dusetos' |
+    'Dūkštas' |
+    'Druskininkai' |
+    'Daugai' |
+    'Akmenė' |
+    'Ariogala' |
+    'Alytus' |
+    'Anykščiai' |
+    'Baltoji Vokė' |
+    'Birštonas' |
+    'Biržai';
 
 export type City = {
     image: string,
