@@ -3,7 +3,7 @@
     <v-table density="compact">
       <thead>
         <tr>
-          <th colspan="3">
+          <th colspan="3" class="text-center">
             Spėjimai({{ gameStore.guesses.length }}/6)
           </th>
         </tr>
@@ -11,8 +11,8 @@
       <tbody>
         <tr v-for="guess in guesses">
           <td>{{ guess.cityName }}</td>
-            <td>{{ guess.distance ? (guess.distance + 'km') : 0 }}</td>
-            <td>{{ guess.arrow }}</td>
+          <td>{{ guess.distance ? (guess.distance + 'km') : 0 }}</td>
+          <td>{{ guess.arrow }}</td>
         </tr>
       </tbody>
     </v-table>

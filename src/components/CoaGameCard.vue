@@ -1,18 +1,18 @@
 <template>
-    <div>
-      <v-card class="game-card">
-        <template #title>
-          Dienos herbas
-        </template>
-        <template #subtitle>
-          Atspėk Lietuvos miesto herbą
-        </template>
-        <template v-if="gameStore.ready" #text>
-          <CoaGamePuzzle />
-          <CoaGameControl class="mt-2" />
-          <CoaGameResult class="mt-2" />
-        </template>
-      </v-card>
+  <div>
+    <v-card class="game-card">
+      <v-card-title class="text-center">
+        Dienos herbas
+      </v-card-title>
+      <v-card-subtitle class="text-center">
+        Atspėk šios dienos Lietuvos miesto herbą
+      </v-card-subtitle>
+      <v-card-text v-if="gameStore.ready">
+        <CoaGamePuzzle />
+        <CoaGameControl class="mt-2" />
+        <CoaGameResult class="mt-2" />
+      </v-card-text>
+    </v-card>
     <CoaGameShare />
   </div>
 </template>
