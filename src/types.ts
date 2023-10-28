@@ -10,6 +10,12 @@ export type Size = {
 
 
 export type CityName =
+    'Jurbarkas' |
+    'Joniškis' |
+    'Joniškėlis' |
+    'Jonava' |
+    'Jieznas' |
+    'Ignalina' |
     'Grigiškės' |
     'Gelgaudiškis' |
     'Garliava' |

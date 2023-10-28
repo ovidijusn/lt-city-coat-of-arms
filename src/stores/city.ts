@@ -26,6 +26,13 @@ import imgGarliava from '@/assets/emblems/Garliava.png';
 import imgGelgaudiskis from '@/assets/emblems/Gelgaudiškis.png';
 import imgGrigiskes from '@/assets/emblems/Grigiškės.png';
 
+import imgIgnalina from '@/assets/emblems/Ignalina.png';
+import imgJieznas from '@/assets/emblems/Jieznas.png';
+import imgJonava from '@/assets/emblems/Jonava.png';
+import imgJoniskelis from '@/assets/emblems/Joniškėlis.png';
+import imgJoniskis from '@/assets/emblems/Joniškis.png';
+import imgJurbarkas from '@/assets/emblems/Jurbarkas.png';
+
 type State = { [key in CityName]: City };
 
 export const useCityStore = defineStore('city', {
@@ -41,6 +48,54 @@ export const useCityStore = defineStore('city', {
 });
 
 const cities = {
+    'Jurbarkas': {
+        image: imgJurbarkas,
+        location: {
+            latitude: 55.078,
+            longitude: 22.765,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Joniškis': {
+        image: imgJoniskis,
+        location: {
+            latitude: 56.241,
+            longitude: 23.615,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Joniškėlis': {
+        image: imgJoniskelis,
+        location: {
+            latitude: 56.023,
+            longitude: 24.17,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Jonava': {
+        image: imgJonava,
+        location: {
+            latitude: 55.074,
+            longitude: 24.276,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Jieznas': {
+        image: imgJieznas,
+        location: {
+            latitude: 54.601,
+            longitude: 24.175,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Ignalina': {
+        image: imgIgnalina,
+        location: {
+            latitude: 55.34,
+            longitude: 26.161,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
     'Grigiškės': {
         image: imgGrigiskes,
         location: {
