@@ -50,12 +50,28 @@ import imgKursenai from '@/assets/emblems/Kuršėnai.png';
 import imgLazdijai from '@/assets/emblems/Lazdijai.png';
 import imgLentvaris from '@/assets/emblems/Lentvaris.png';
 import imgLinkuva from '@/assets/emblems/Linkuva.png';
+
 import imgMarijampole from '@/assets/emblems/Marijampolė.png';
 import imgMazeikiai from '@/assets/emblems/Mažeikiai.png';
 import imgMoletai from '@/assets/emblems/Molėtai.png';
+
 import imgNaujojiAkmene from '@/assets/emblems/Naujoji_Akmenė.png';
 import imgNemencine from '@/assets/emblems/Nemenčinė.png';
 import imgNeringa from '@/assets/emblems/Neringa.png';
+
+import imgObeliai from '@/assets/emblems/Obeliai.png';
+
+import imgPabrade from '@/assets/emblems/Pabradė.png';
+import imgPagegiai from '@/assets/emblems/Pagėgiai.png';
+import imgPakruojis from '@/assets/emblems/Pakruojis.png';
+import imgPalanga from '@/assets/emblems/Palanga.png';
+import imgPandelys from '@/assets/emblems/Pandėlys.png';
+/*import imgPanemune from '@/assets/emblems/Panemunė.png';*/
+import imgPanevezys from '@/assets/emblems/Panevėžys.png';
+import imgPasvalys from '@/assets/emblems/Pasvalys.png';
+import imgPlunge from '@/assets/emblems/Plungė.png';
+import imgPriekule from '@/assets/emblems/Priekulė.png';
+import imgPrienai from '@/assets/emblems/Prienai.png';
 
 type State = { [key in CityName]: City };
 
@@ -72,6 +88,102 @@ export const useCityStore = defineStore('city', {
 });
 
 const cities = {
+    'Prienai': {
+        image: imgPrienai,
+        location: {
+            latitude: 54.634,
+            longitude: 23.943,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Priekulė': {
+        image: imgPriekule,
+        location: {
+            latitude: 55.555,
+            longitude: 21.318,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Plungė': {
+        image: imgPlunge,
+        location: {
+            latitude: 55.914,
+            longitude: 21.853,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Pasvalys': {
+        image: imgPasvalys,
+        location: {
+            latitude: 56.062,
+            longitude: 24.397,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Panevėžys': {
+        image: imgPanevezys,
+        location: {
+            latitude: 55.734,
+            longitude: 24.358,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    /*'Panemunė': {
+        image: imgPanemune,
+        location: {
+            latitude: 55.087,
+            longitude: 21.912,
+        },
+        imageSize: { w: 600, h: 725 }
+    },*/
+    'Pandėlys': {
+        image: imgPandelys,
+        location: {
+            latitude: 56.023,
+            longitude: 25.227,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Palanga': {
+        image: imgPalanga,
+        location: {
+            latitude: 55.923,
+            longitude: 21.068,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Pakruojis': {
+        image: imgPakruojis,
+        location: {
+            latitude: 55.978,
+            longitude: 23.845,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Pagėgiai': {
+        image: imgPagegiai,
+        location: {
+            latitude: 55.133,
+            longitude: 21.91,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Pabradė': {
+        image: imgPabrade,
+        location: {
+            latitude: 54.983,
+            longitude: 25.766,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Obeliai': {
+        image: imgObeliai,
+        location: {
+            latitude: 55.941,
+            longitude: 25.796,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
     'Neringa': {
         image: imgNeringa,
         location: {

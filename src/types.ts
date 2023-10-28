@@ -10,7 +10,11 @@ export type Size = {
 
 
 export type CityName =
-    'Neringa' |
+    'Obeliai' |
+    'Pabradė' | 'Pagėgiai' | 'Pakruojis' |
+    'Palanga' | 'Pandėlys' | /*'Panemunė' |*/
+    'Panevėžys' | 'Pasvalys' | 'Plungė' |
+    'Priekulė' | 'Prienai' | 'Neringa' |
     'Nemenčinė' | 'Naujoji Akmenė' | 'Molėtai' |
     'Mažeikiai' | 'Marijampolė' | 'Linkuva' |
     'Lentvaris' | 'Lazdijai' | 'Kuršėnai' |
