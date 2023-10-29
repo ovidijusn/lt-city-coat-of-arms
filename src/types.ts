@@ -10,7 +10,10 @@ export type Size = {
 
 
 export type CityName =
-    'Salantai' | 'Seda' |
+    'Švenčionys' | 'Švenčionėliai' |
+    'Širvintos' | 'Šilutė' | 'Šilalė' |
+    'Šiauliai' | 'Šeduva' | 'Šalčininkai' |
+    'Šakiai' | 'Salantai' | 'Seda' |
     'Simnas' | 'Skaudvilė' | 'Skuodas' |
     'Smalininkai' | 'Subačius' | 'Radviliškis' |
     'Ramygala' | 'Raseiniai' | 'Rietavas' |

@@ -88,6 +88,16 @@ import imgSkuodas from '@/assets/emblems/Skuodas.png';
 import imgSmalininkai from '@/assets/emblems/Smalininkai.png';
 import imgSubacius from '@/assets/emblems/Subačius.png';
 
+import imgSakiai from '@/assets/emblems/Šakiai.png';
+import imgSalcininkai from '@/assets/emblems/Šalčininkai.png';
+import imgSeduva from '@/assets/emblems/Šeduva.png';
+import imgSiauliai from '@/assets/emblems/Šiauliai.png';
+import imgSilale from '@/assets/emblems/Šilalė.png';
+import imgSilute from '@/assets/emblems/Šilutė.png';
+import imgSirvintos from '@/assets/emblems/Širvintos.png';
+import imgSvencioneliai from '@/assets/emblems/Švenčionėliai.png';
+import imgSvencionys from '@/assets/emblems/Švenčionys.png';
+
 type State = { [key in CityName]: City };
 
 export const useCityStore = defineStore('city', {
@@ -103,6 +113,78 @@ export const useCityStore = defineStore('city', {
 });
 
 const cities = {
+    'Švenčionys': {
+        image: imgSvencionys,
+        location: {
+            latitude: 55.134,
+            longitude: 26.163,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Švenčionėliai': {
+        image: imgSvencioneliai,
+        location: {
+            latitude: 55.165,
+            longitude: 25.999,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Širvintos': {
+        image: imgSirvintos,
+        location: {
+            latitude: 55.052,
+            longitude: 24.951,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Šilutė': {
+        image: imgSilute,
+        location: {
+            latitude: 55.341,
+            longitude: 21.461,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Šilalė': {
+        image: imgSilale,
+        location: {
+            latitude: 55.49,
+            longitude: 22.186,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Šiauliai': {
+        image: imgSiauliai,
+        location: {
+            latitude: 55.934,
+            longitude: 23.316,
+        },
+        imageSize: { w: 600, h: 612 }
+    },
+    'Šeduva': {
+        image: imgSeduva,
+        location: {
+            latitude: 55.757,
+            longitude: 23.757,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Šalčininkai': {
+        image: imgSalcininkai,
+        location: {
+            latitude: 54.309,
+            longitude: 25.382,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Šakiai': {
+        image: imgSakiai,
+        location: {
+            latitude: 54.956,
+            longitude: 23.04,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
     'Subačius': {
         image: imgSubacius,
         location: {
