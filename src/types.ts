@@ -10,7 +10,10 @@ export type Size = {
 
 
 export type CityName =
-    'Švenčionys' | 'Švenčionėliai' |
+    'Užventis' |
+    'Utena' | 'Ukmergė' | 'Trakai' |
+    'Troškūnai' | 'Tytuvėnai' | 'Telšiai' |
+    'Tauragė' | 'Švenčionys' | 'Švenčionėliai' |
     'Širvintos' | 'Šilutė' | 'Šilalė' |
     'Šiauliai' | 'Šeduva' | 'Šalčininkai' |
     'Šakiai' | 'Salantai' | 'Seda' |

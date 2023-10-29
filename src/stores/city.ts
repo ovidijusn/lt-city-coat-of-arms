@@ -98,6 +98,16 @@ import imgSirvintos from '@/assets/emblems/Širvintos.png';
 import imgSvencioneliai from '@/assets/emblems/Švenčionėliai.png';
 import imgSvencionys from '@/assets/emblems/Švenčionys.png';
 
+import imgTaurage from '@/assets/emblems/Tauragė.png';
+import imgTelsiai from '@/assets/emblems/Telšiai.png';
+import imgTytuvenai from '@/assets/emblems/Tytuvėnai.png';
+import imgTrakai from '@/assets/emblems/Trakai.png';
+import imgTroskunai from '@/assets/emblems/Troškūnai.png';
+
+import imgUkmerge from '@/assets/emblems/Ukmergė.png';
+import imgUtena from '@/assets/emblems/Utena.png';
+import imgUzventis from '@/assets/emblems/Užventis.png';
+
 type State = { [key in CityName]: City };
 
 export const useCityStore = defineStore('city', {
@@ -113,6 +123,70 @@ export const useCityStore = defineStore('city', {
 });
 
 const cities = {
+    'Užventis': {
+        image: imgUzventis,
+        location: {
+            latitude: 55.782,
+            longitude: 22.656,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Utena': {
+        image: imgUtena,
+        location: {
+            latitude: 55.498,
+            longitude: 25.603,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Ukmergė': {
+        image: imgUkmerge,
+        location: {
+            latitude: 55.248,
+            longitude: 24.76,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Troškūnai': {
+        image: imgTroskunai,
+        location: {
+            latitude: 55.587,
+            longitude: 24.871,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Trakai': {
+        image: imgTrakai,
+        location: {
+            latitude: 54.645,
+            longitude: 24.935,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Tytuvėnai': {
+        image: imgTytuvenai,
+        location: {
+            latitude: 55.597,
+            longitude: 23.197,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Telšiai': {
+        image: imgTelsiai,
+        location: {
+            latitude: 55.985,
+            longitude: 22.249,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Tauragė': {
+        image: imgTaurage,
+        location: {
+            latitude: 55.253,
+            longitude: 22.29,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
     'Švenčionys': {
         image: imgSvencionys,
         location: {
