@@ -10,7 +10,9 @@ export type Size = {
 
 
 export type CityName =
-    'Radviliškis' |
+    'Salantai' | 'Seda' |
+    'Simnas' | 'Skaudvilė' | 'Skuodas' |
+    'Smalininkai' | 'Subačius' | 'Radviliškis' |
     'Ramygala' | 'Raseiniai' | 'Rietavas' |
     'Rokiškis' | 'Rūdiškės' | 'Obeliai' |
     'Pabradė' | 'Pagėgiai' | 'Pakruojis' |

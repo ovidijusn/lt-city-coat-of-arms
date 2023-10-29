@@ -80,6 +80,14 @@ import imgRietavas from '@/assets/emblems/Rietavas.png';
 import imgRokiskis from '@/assets/emblems/Rokiškis.png';
 import imgRudiskes from '@/assets/emblems/Rūdiškės.png';
 
+import imgSalantai from '@/assets/emblems/Salantai.png';
+import imgSeda from '@/assets/emblems/Seda.png';
+import imgSimnas from '@/assets/emblems/Simnas.png';
+import imgSkaudvile from '@/assets/emblems/Skaudvilė.png';
+import imgSkuodas from '@/assets/emblems/Skuodas.png';
+import imgSmalininkai from '@/assets/emblems/Smalininkai.png';
+import imgSubacius from '@/assets/emblems/Subačius.png';
+
 type State = { [key in CityName]: City };
 
 export const useCityStore = defineStore('city', {
@@ -95,6 +103,62 @@ export const useCityStore = defineStore('city', {
 });
 
 const cities = {
+    'Subačius': {
+        image: imgSubacius,
+        location: {
+            latitude: 55.768,
+            longitude: 24.744,
+        },
+        imageSize: { w: 600, h: 724 }
+    },
+    'Smalininkai': {
+        image: imgSmalininkai,
+        location: {
+            latitude: 55.074,
+            longitude: 22.579,
+        },
+        imageSize: { w: 600, h: 726 }
+    },
+    'Skuodas': {
+        image: imgSkuodas,
+        location: {
+            latitude: 56.269,
+            longitude: 21.524,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Skaudvilė': {
+        image: imgSkaudvile,
+        location: {
+            latitude: 55.408,
+            longitude: 22.578,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Simnas': {
+        image: imgSimnas,
+        location: {
+            latitude: 54.383,
+            longitude: 23.646,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Seda': {
+        image: imgSeda,
+        location: {
+            latitude: 56.167,
+            longitude: 22.093,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Salantai': {
+        image: imgSalantai,
+        location: {
+            latitude: 56.059,
+            longitude: 21.569,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
     'Rūdiškės': {
         image: imgRudiskes,
         location: {
