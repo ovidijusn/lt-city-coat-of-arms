@@ -33,5 +33,3 @@ gameStore.resetIfNeeded();
   width: 350px;
 }
 </style>
-
-../random
