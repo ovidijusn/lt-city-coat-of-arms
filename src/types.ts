@@ -10,7 +10,12 @@ export type Size = {
 
 
 export type CityName =
-    'Užventis' |
+    'Žiežmariai' |
+    'Žagarė' | 'Zarasai' | 'Visaginas' |
+    'Virbalis' | 'Vilnius' | 'Vilkija' |
+    'Vilkaviškis' | 'Vievis' | 'Viekšniai' |
+    'Venta' | 'Veisiejai' | 'Varniai' |
+    'Varėna' | 'Vabalninkas' | 'Užventis' |
     'Utena' | 'Ukmergė' | 'Trakai' |
     'Troškūnai' | 'Tytuvėnai' | 'Telšiai' |
     'Tauragė' | 'Švenčionys' | 'Švenčionėliai' |

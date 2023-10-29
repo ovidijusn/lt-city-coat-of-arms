@@ -108,6 +108,24 @@ import imgUkmerge from '@/assets/emblems/Ukmergė.png';
 import imgUtena from '@/assets/emblems/Utena.png';
 import imgUzventis from '@/assets/emblems/Užventis.png';
 
+import imgVabalninkas from '@/assets/emblems/Vabalninkas.png';
+import imgVarena from '@/assets/emblems/Varėna.png';
+import imgVarniai from '@/assets/emblems/Varniai.png';
+import imgVeisiejai from '@/assets/emblems/Veisiejai.png';
+import imgVenta from '@/assets/emblems/Venta.png';
+import imgVieksniai from '@/assets/emblems/Viekšniai.png';
+import imgVievis from '@/assets/emblems/Vievis.png';
+import imgVilkaviskis from '@/assets/emblems/Vilkaviškis.png';
+import imgVilkija from '@/assets/emblems/Vilkija.png';
+import imgVilnius from '@/assets/emblems/Vilnius.png';
+import imgVirbalis from '@/assets/emblems/Virbalis.png';
+import imgVisaginas from '@/assets/emblems/Visaginas.png';
+
+import imgZarasai from '@/assets/emblems/Zarasai.png';
+
+import imgZagare from '@/assets/emblems/Žagarė.png';
+import imgZiezmariai from '@/assets/emblems/Žiežmariai.png';
+
 type State = { [key in CityName]: City };
 
 export const useCityStore = defineStore('city', {
@@ -123,6 +141,126 @@ export const useCityStore = defineStore('city', {
 });
 
 const cities = {
+    'Žiežmariai': {
+        image: imgZiezmariai,
+        location: {
+            latitude: 54.806,
+            longitude: 24.443,
+        },
+        imageSize: { w: 600, h: 1099 }
+    },
+    'Žagarė': {
+        image: imgZagare,
+        location: {
+            latitude: 56.358,
+            longitude: 23.255,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Zarasai': {
+        image: imgZarasai,
+        location: {
+            latitude: 55.73,
+            longitude: 26.247,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Visaginas': {
+        image: imgVisaginas,
+        location: {
+            latitude: 55.6,
+            longitude: 26.437,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Virbalis': {
+        image: imgVirbalis,
+        location: {
+            latitude: 54.626,
+            longitude: 22.823,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Vilnius': {
+        image: imgVilnius,
+        location: {
+            latitude: 54.687,
+            longitude: 25.283,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Vilkija': {
+        image: imgVilkija,
+        location: {
+            latitude: 55.04,
+            longitude: 23.583,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Vilkaviškis': {
+        image: imgVilkaviskis,
+        location: {
+            latitude: 54.65,
+            longitude: 23.036,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Vievis': {
+        image: imgVievis,
+        location: {
+            latitude: 54.769,
+            longitude: 24.816,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Viekšniai': {
+        image: imgVieksniai,
+        location: {
+            latitude: 56.236,
+            longitude: 22.513,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Venta': {
+        image: imgVenta,
+        location: {
+            latitude: 56.19,
+            longitude: 22.689,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Veisiejai': {
+        image: imgVeisiejai,
+        location: {
+            latitude: 54.1,
+            longitude: 23.695,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Varniai': {
+        image: imgVarniai,
+        location: {
+            latitude: 55.743,
+            longitude: 22.371,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Varėna': {
+        image: imgVarena,
+        location: {
+            latitude: 54.212,
+            longitude: 24.567,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Vabalninkas': {
+        image: imgVabalninkas,
+        location: {
+            latitude: 55.98,
+            longitude: 24.747,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
     'Užventis': {
         image: imgUzventis,
         location: {
