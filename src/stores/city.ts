@@ -73,6 +73,13 @@ import imgPlunge from '@/assets/emblems/Plungė.png';
 import imgPriekule from '@/assets/emblems/Priekulė.png';
 import imgPrienai from '@/assets/emblems/Prienai.png';
 
+import imgRadviliskis from '@/assets/emblems/Radviliškis.png';
+import imgRamygala from '@/assets/emblems/Ramygala.png';
+import imgRaseiniai from '@/assets/emblems/Raseiniai.png';
+import imgRietavas from '@/assets/emblems/Rietavas.png';
+import imgRokiskis from '@/assets/emblems/Rokiškis.png';
+import imgRudiskes from '@/assets/emblems/Rūdiškės.png';
+
 type State = { [key in CityName]: City };
 
 export const useCityStore = defineStore('city', {
@@ -88,6 +95,54 @@ export const useCityStore = defineStore('city', {
 });
 
 const cities = {
+    'Rūdiškės': {
+        image: imgRudiskes,
+        location: {
+            latitude: 54.521,
+            longitude: 24.832,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Rokiškis': {
+        image: imgRokiskis,
+        location: {
+            latitude: 55.954,
+            longitude: 25.592,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Rietavas': {
+        image: imgRietavas,
+        location: {
+            latitude: 55.723,
+            longitude: 21.927,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Raseiniai': {
+        image: imgRaseiniai,
+        location: {
+            latitude: 55.378,
+            longitude: 23.117,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Ramygala': {
+        image: imgRamygala,
+        location: {
+            latitude: 55.51,
+            longitude: 24.305,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
+    'Radviliškis': {
+        image: imgRadviliskis,
+        location: {
+            latitude: 55.816,
+            longitude: 23.551,
+        },
+        imageSize: { w: 600, h: 725 }
+    },
     'Prienai': {
         image: imgPrienai,
         location: {

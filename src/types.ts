@@ -10,7 +10,9 @@ export type Size = {
 
 
 export type CityName =
-    'Obeliai' |
+    'Radviliškis' |
+    'Ramygala' | 'Raseiniai' | 'Rietavas' |
+    'Rokiškis' | 'Rūdiškės' | 'Obeliai' |
     'Pabradė' | 'Pagėgiai' | 'Pakruojis' |
     'Palanga' | 'Pandėlys' | /*'Panemunė' |*/
     'Panevėžys' | 'Pasvalys' | 'Plungė' |
