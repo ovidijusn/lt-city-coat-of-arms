@@ -23,7 +23,9 @@ const gameStore = useGameStore();
 
 const width = ref(200);
 const height = computed(() => Math.ceil((width.value * gameStore.city.imageSize.h) / gameStore.city.imageSize.w));
-const imgContent = computed(() => `url(/emblems/${gameStore.cityName.replace(' ', '_')}.png)`);
+const imgUrl = computed(() => `${import.meta.env.BASE_URL}/emblems/${gameStore.cityName.replace(' ', '_')}.png`);
+
+const imgContent = computed(() => `url(${imgUrl.value})`);
 
 const pWidth = computed(() => Math.ceil(width.value / 2));
 const pHeight = computed(() => Math.ceil(height.value / 3));
