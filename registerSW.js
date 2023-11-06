@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/lt-city-coat-of-arms/sw.js', { scope: '/lt-city-coat-of-arms/' })})}
