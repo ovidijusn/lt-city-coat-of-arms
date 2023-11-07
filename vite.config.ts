@@ -11,7 +11,7 @@ export default defineConfig({
     vuetify({ autoImport: true }),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['emblems/*.png'],
+      includeAssets: ['emblems/*.png', 'assets/*.{woff,woff2,ttf,eot}'],
       manifest: {
         name: 'Dienos herbas',
         short_name: 'DienosHerbas',
@@ -31,7 +31,7 @@ export default defineConfig({
         ]
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,eot,woff2,ttf}'],
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
       }
     })
   ],
