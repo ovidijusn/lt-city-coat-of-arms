@@ -11,7 +11,7 @@ export default defineConfig({
     vuetify({ autoImport: true }),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['emblems/*.png']
+      includeAssets: ['emblems/*.png'],
       manifest: {
         name: 'Dienos herbas',
         short_name: 'DienosHerbas',
