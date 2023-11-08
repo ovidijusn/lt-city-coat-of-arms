@@ -22,11 +22,11 @@ jobs:
           node-version: 18.x
 
       - name: Run install
-        uses: borales/actions-yarn@v4.2
+        uses: borales/actions-yarn@v4.2.0
         with:
           cmd: install
 
       - name: Run build
-        uses: borales/actions-yarn@v4.2
+        uses: borales/actions-yarn@v4.2.0
         with:
           cmd: build
