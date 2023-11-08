@@ -53,7 +53,13 @@ export const useGameStore = defineStore('game', {
         lost: (state) => state.guesses.length === 6 && !state.guesses.includes(state.cityName),
 
         city: (state) => useCityStore().city(state.cityName),
-        candidates: (state) => state.ended ? [] : useCityStore().allNames.filter((name) => !state.guesses.includes(name))
+        candidates(state: State) {
+            if (this.ended) {
+                return [];
+            } else {
+                return useCityStore().allNames.filter((name) => !state.guesses.includes(name))
+            }
+        }
     },
     actions: {
         resetIfNeeded() {
