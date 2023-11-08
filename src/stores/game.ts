@@ -14,7 +14,7 @@ interface State {
 }
 
 function createState(cityName: CityName | undefined): State {
-    console.log('Init Game state', cityName);
+    console.log('Init Game state');
     let city;
     if (cityName) {
         city = cityName;
@@ -52,7 +52,8 @@ export const useGameStore = defineStore('game', {
         won: (state) => state.guesses.includes(state.cityName),
         lost: (state) => state.guesses.length === 6 && !state.guesses.includes(state.cityName),
 
-        city: (state) => useCityStore().city(state.cityName)
+        city: (state) => useCityStore().city(state.cityName),
+        candidates: (state) => state.ended ? [] : useCityStore().allNames.filter((name) => !state.guesses.includes(name))
     },
     actions: {
         resetIfNeeded() {
@@ -67,13 +68,11 @@ export const useGameStore = defineStore('game', {
         },
         changeCity(cityName: CityName) {
             const { dateKey, flipSequence, flipped, guesses } = createState(cityName);
-            console.log(this)
             this.dateKey = dateKey;
             this.cityName = cityName;
             this.flipSequence = flipSequence;
             this.flipped = flipped;
             this.guesses = guesses;
-            console.log(this)
         },
         addGuess(cityName: CityName) {
             if (this.guesses.length < 6) {

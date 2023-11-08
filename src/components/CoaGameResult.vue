@@ -3,13 +3,14 @@
     <v-table density="compact">
       <thead>
         <tr>
-          <th colspan="3" class="text-center">
+          <th colspan="4" class="text-center">
             Spėjimai({{ gameStore.guesses.length }}/6)
           </th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="guess in guesses">
+        <tr v-for="(guess, idx) in guesses.reverse()">
+          <td>{{ guesses.length - (idx) }}/6</td>
           <td>{{ guess.cityName }}</td>
           <td>{{ guess.distance ? (guess.distance + 'km') : 0 }}</td>
           <td>{{ guess.arrow }}</td>

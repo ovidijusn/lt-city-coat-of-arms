@@ -3,12 +3,12 @@
 <!-- Created with Vectornator (http://vectornator.io/) -->
 <svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 800 800" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<linearGradient gradientTransform="matrix(1 0 0 1 0 0)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="100" x2="700" y1="400" y2="400">
+<linearGradient gradientTransform="matrix(0.833333 0 0 0.833333 66.6667 66.6667)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="100" x2="700" y1="400" y2="400">
 <stop offset="0" stop-color="#fdb913"/>
 <stop offset="0.477083" stop-color="#006a44"/>
 <stop offset="1" stop-color="#c1272d"/>
 </linearGradient>
-<linearGradient gradientTransform="matrix(0.666667 0 0 0.666667 133.333 133.333)" gradientUnits="userSpaceOnUse" id="LinearGradient_2" x1="100" x2="700" y1="400" y2="400">
+<linearGradient gradientTransform="matrix(0.583333 0 0 0.583333 166.667 166.667)" gradientUnits="userSpaceOnUse" id="LinearGradient_2" x1="100" x2="700" y1="400" y2="400">
 <stop offset="0" stop-color="#fdb913"/>
 <stop offset="0.477083" stop-color="#006a44"/>
 <stop offset="1" stop-color="#c1272d"/>
@@ -20,8 +20,8 @@
 </linearGradient>
 </defs>
 <g id="Layer-1" vectornator:layerName="Layer 1">
-<path d="M100 50L100 400L100 510.01C100 642.558 234.309 750 400 750C565.691 750 700 642.558 700 510.01L700 400L700 176.931L700 50L400 50L100 50Z" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="18" vectornator:layerName="Curve 1"/>
-<path d="M200 166.667L200 400L200 473.34C200 561.705 289.539 633.333 400 633.333C510.461 633.333 600 561.705 600 473.34L600 400L600 251.288L600 166.667L400 166.667L200 166.667Z" fill="url(#LinearGradient_2)" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="18" vectornator:layerName="Curve 2"/>
+<path d="M150 108.333L150 400L150 491.675C150 602.131 261.924 691.667 400 691.667C538.076 691.667 650 602.131 650 491.675L650 400L650 214.109L650 108.333L400 108.333L150 108.333Z" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="18" vectornator:layerName="Curve 1"/>
+<path d="M225 195.833L225 400L225 464.173C225 541.492 303.347 604.167 400 604.167C496.653 604.167 575 541.492 575 464.173L575 400L575 269.877L575 195.833L400 195.833L225 195.833Z" fill="url(#LinearGradient_2)" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="18" vectornator:layerName="Curve 2"/>
 <path d="M300 289.895L300 400L300 434.607C300 476.305 344.77 510.105 400 510.105C455.23 510.105 500 476.305 500 434.607L500 400L500 329.826L500 289.895L400 289.895L300 289.895Z" fill="url(#LinearGradient_3)" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="18" vectornator:layerName="Curve 3"/>
 </g>
 </svg>

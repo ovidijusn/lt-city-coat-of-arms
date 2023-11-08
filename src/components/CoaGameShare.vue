@@ -1,13 +1,8 @@
 <template>
-  <v-dialog v-model="opened" v-if="gameStore.ended" width="500" max-height="550">
+  <v-dialog :model-value="opened" width="500" max-height="550" @keyup.esc="opened = false">
     <template #default>
-      <v-card>
-        <v-card-title v-if="gameStore.won">
-          Sveikinimai! 🎉🥳
-        </v-card-title>
-        <v-card-title v-else>
-          Sekmės rytoj! 😉
-        </v-card-title>
+      <v-card :title="title">
+        <template #append><v-btn icon="mdi-close" variant="text" @click="opened = false"></v-btn></template>
         <v-card-subtitle>
           Atsakymas: <b>{{ gameStore.cityName }}</b>
         </v-card-subtitle>
@@ -43,16 +38,24 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useGameStore } from '@/stores/game';
 import { useStatsStore } from '@/stores/stats';
 
 const gameStore = useGameStore();
 const statsStore = useStatsStore();
-const opened = ref(true);
+const opened = ref(gameStore.ended);
 const copied = ref(false);
+const title = computed(() => gameStore.won ? 'Sveikinimai! 🎉🥳' : 'Sekmės rytoj! 😉');
 
-const colors = ['green', 'light-green', 'lime', 'amber', 'orange', 'red']
+const colors = ['green', 'light-green', 'lime', 'amber', 'orange', 'red'];
+
+gameStore.$subscribe(() => {
+  if (gameStore.ended) {
+    setTimeout(() => opened.value = true, 500)
+  }
+});
+
 function _redOrGreen(idx: number): string {
   return gameStore.flipped.includes(idx) ? '🟥' : '🟩';
 }
