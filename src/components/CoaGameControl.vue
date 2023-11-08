@@ -1,8 +1,8 @@
 <template>
   <v-sheet>
     <v-autocomplete v-model="city" v-model:search="search" v-model:menu="menu" variant="outlined" density="compact"
-      autofocus hide-details hide-no-data :items="gameStore.candidates" :disabled="gameStore.ended"
-      :custom-filter="cityFilter" @keyup.enter="enter"></v-autocomplete>
+      autofocus hide-details hide-no-data :items="gameStore.candidates.filter(cityFilter)" :disabled="gameStore.ended"
+      :custom-filter="cityFilter" @keyup.enter="enter" @update:search="hideNames = hideNames && !$event"></v-autocomplete>
 
     <v-btn class="mt-1" variant="outlined" block :disabled="!canGuess" @click="guess">Spėti</v-btn>
   </v-sheet>
@@ -18,18 +18,25 @@ const gameStore = useGameStore();
 const city = ref('');
 const search = ref('');
 const menu = ref(false);
+const hideNames = ref(false);
 const canGuess = computed(() => city.value && !gameStore.ended);
 
-function cityFilter(title: string, query: string): boolean {
-  if (city.value == query) {
+function cityFilter(title: string): boolean {
+  if (hideNames.value) {
+    return false;
+  }
+  if (search.value && city.value == search.value) {
     return false;
   }
   const tileLower = title.toLowerCase();
-  const queryLower = query.toLowerCase();
+  const queryLower = search.value.toLowerCase();
   return tileLower.includes(queryLower) || normalize(tileLower).includes(queryLower);
 }
 
 function enter() {
+  if (hideNames.value) {
+    hideNames.value = false;
+  }
   if (menu.value) {
     guess();
   }
@@ -40,6 +47,7 @@ function guess() {
     gameStore.addGuess(city.value as CityName);
     city.value = '';
     search.value = ''
+    hideNames.value = true
   }
 }
 
