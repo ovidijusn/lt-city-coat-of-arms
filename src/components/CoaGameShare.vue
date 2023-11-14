@@ -1,10 +1,10 @@
 <template>
-  <v-dialog :model-value="opened" width="500" max-height="550" @keyup.esc="opened = false">
+  <v-dialog :model-value="opened" width="500" max-height="550" @update:model-value="emit('update:opened', $event)">
     <template #default>
       <v-card :title="title">
-        <template #append><v-btn icon="mdi-close" variant="text" @click="opened = false"></v-btn></template>
-        <v-card-subtitle>
-          Atsakymas: <b>{{ gameStore.cityName }}</b>
+        <template #append><v-btn icon="mdi-close" variant="text" @click="emit('update:opened', false)"></v-btn></template>
+        <v-card-subtitle v-if="gameStore.ended">
+          Dienos miestas: <b>{{ gameStore.cityName }}</b>
         </v-card-subtitle>
         <v-card-subtitle>
           Atspėta: <b>{{ statsStore.totalWins }}</b> iš <b>{{ statsStore.total }}</b>
@@ -28,7 +28,7 @@
           </v-table>
         </v-card-text>
 
-        <v-card-actions>
+        <v-card-actions v-if="gameStore.ended">
           <v-btn prepend-icon="mdi-share-variant" @click="share">Dalintis</v-btn>
           <v-snackbar v-model="copied" color="info" timeout="2000">Resultas nukopijuotas</v-snackbar>
         </v-card-actions>
@@ -42,19 +42,21 @@ import { ref, computed } from 'vue';
 import { useGameStore } from '@/stores/game';
 import { useStatsStore } from '@/stores/stats';
 
-const gameStore = useGameStore();
-const statsStore = useStatsStore();
-const opened = ref(gameStore.ended);
-const copied = ref(false);
-const title = computed(() => gameStore.won ? 'Sveikinimai! 🎉🥳' : 'Sekmės rytoj! 😉');
-
-const colors = ['green', 'light-green', 'lime', 'amber', 'orange', 'red'];
-
-gameStore.$subscribe(() => {
-  if (gameStore.ended) {
-    setTimeout(() => opened.value = true, 500)
+defineProps({
+  opened: {
+    type: Boolean,
+    default: false
   }
 });
+
+const emit = defineEmits(['update:opened']);
+
+const gameStore = useGameStore();
+const statsStore = useStatsStore();
+const copied = ref(false);
+const title = computed(() => gameStore.ended ? (gameStore.won ? 'Sveikinimai! 🎉🥳' : 'Sekmės rytoj! 😉') : 'Statistika');
+
+const colors = ['green', 'light-green', 'lime', 'amber', 'orange', 'red'];
 
 function _redOrGreen(idx: number): string {
   return gameStore.flipped.includes(idx) ? '🟥' : '🟩';
