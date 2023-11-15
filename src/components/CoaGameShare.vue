@@ -41,6 +41,7 @@
 import { ref, computed } from 'vue';
 import { useGameStore } from '@/stores/game';
 import { useStatsStore } from '@/stores/stats';
+import { daysSinceLunch } from '@/utils/date';
 
 defineProps({
   opened: {
@@ -71,7 +72,7 @@ function share() {
   const url = window.location.href;
   const guesses = gameStore.won ? gameStore.guesses.length : 'X';
   const text =
-    `#DienosHerbas ${guesses}/6
+    `#DienosHerbas #${daysSinceLunch()} ${guesses}/6
 ${_puzzle()}
 ${url}`;
 
