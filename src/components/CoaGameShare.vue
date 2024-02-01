@@ -19,9 +19,17 @@
               <tr v-for="(win, idx) in statsStore.wins">
                 <td style="width: 10px; padding: 0;">{{ idx + 1 }}</td>
                 <td>
-                  <v-progress-linear :model-value="win" :max="statsStore.totalWins" :color="colors[idx]" height="20">{{
+                  <v-progress-linear :model-value="win" :max="statsStore.total" :color="colors[idx]" height="20">{{
                     win
                   }}</v-progress-linear>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 10px; padding: 0;">x</td>
+                <td>
+                  <v-progress-linear :model-value="loses" :max="statsStore.total" color="red-darken-4" height="20">
+                    {{ loses }}
+                  </v-progress-linear>
                 </td>
               </tr>
             </tbody>
@@ -29,7 +37,7 @@
         </v-card-text>
 
         <v-card-actions v-if="gameStore.ended">
-          <v-btn prepend-icon="mdi-share-variant" @click="share">Dalintis</v-btn>
+          <v-btn prepend-icon="mdi-share-variant" @click="share" title="Dalintis">Dalintis</v-btn>
           <v-snackbar v-model="copied" color="info" timeout="2000">Resultas nukopijuotas</v-snackbar>
         </v-card-actions>
       </v-card>
@@ -56,6 +64,8 @@ const gameStore = useGameStore();
 const statsStore = useStatsStore();
 const copied = ref(false);
 const title = computed(() => gameStore.ended ? (gameStore.won ? 'Sveikinimai! 🎉🥳' : 'Sekmės rytoj! 😉') : 'Statistika');
+const loses = computed(() => statsStore.total - statsStore.totalWins);
+
 
 const colors = ['green', 'light-green', 'lime', 'amber', 'orange', 'red'];
 
