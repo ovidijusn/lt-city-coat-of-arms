@@ -79,7 +79,10 @@ ${_redOrGreen(4)}${_redOrGreen(5)}`
 }
 
 function share() {
-  const url = window.location.href;
+  let url = window.location.href;
+  if (url.endsWith('/')) {
+    url = url.substring(0, url.length - 1);
+  }
   const guesses = gameStore.won ? gameStore.guesses.length : 'X';
   const text =
     `#DienosHerbas #${daysSinceLunch()} ${guesses}/6
