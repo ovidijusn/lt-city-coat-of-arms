@@ -9,7 +9,7 @@
         <v-btn size="small" icon @click="showHelp" title="Pagalba">
           <v-icon>mdi-help</v-icon>
         </v-btn>
-        <v-btn size="small" icon href="https://www.buymeacoffee.com/ovidijus" title="Pavaišinti kava">
+        <v-btn size="small" icon href="https://www.buymeacoffee.com/ovidijus" target="_blank" title="Pavaišinti kava">
           <v-icon>mdi-coffee-outline</v-icon>
         </v-btn>
       </v-toolbar>
