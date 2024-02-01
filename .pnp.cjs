@@ -31,6 +31,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-vue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.1"],\
           ["geolib", "npm:3.3.4"],\
           ["gh-pages", "npm:6.0.0"],\
+          ["image-size", "npm:1.1.1"],\
           ["pinia", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:2.1.7"],\
           ["pinia-plugin-persistedstate", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:3.2.0"],\
           ["random", "npm:4.1.0"],\
@@ -4688,6 +4689,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["image-size", [\
+      ["npm:1.1.1", {\
+        "packageLocation": "./.yarn/cache/image-size-npm-1.1.1-4e6d664667-2660470096.zip/node_modules/image-size/",\
+        "packageDependencies": [\
+          ["image-size", "npm:1.1.1"],\
+          ["queue", "npm:6.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["imurmurhash", [\
       ["npm:0.1.4", {\
         "packageLocation": "./.yarn/cache/imurmurhash-npm-0.1.4-610c5068a0-8b51313850.zip/node_modules/imurmurhash/",\
@@ -5221,6 +5232,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-vue", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.4.1"],\
           ["geolib", "npm:3.3.4"],\
           ["gh-pages", "npm:6.0.0"],\
+          ["image-size", "npm:1.1.1"],\
           ["pinia", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:2.1.7"],\
           ["pinia-plugin-persistedstate", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:3.2.0"],\
           ["random", "npm:4.1.0"],\
@@ -5939,6 +5951,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/punycode-npm-2.3.1-97543c420d-14f76a8206.zip/node_modules/punycode/",\
         "packageDependencies": [\
           ["punycode", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["queue", [\
+      ["npm:6.0.2", {\
+        "packageLocation": "./.yarn/cache/queue-npm-6.0.2-ebbcf599cf-cf987476cc.zip/node_modules/queue/",\
+        "packageDependencies": [\
+          ["queue", "npm:6.0.2"],\
+          ["inherits", "npm:2.0.4"]\
         ],\
         "linkType": "HARD"\
       }]\

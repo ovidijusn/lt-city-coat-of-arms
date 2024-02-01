@@ -3,11 +3,14 @@
     <v-card class="game-card">
       <v-toolbar class="text-center" density="compact">
         <v-toolbar-title>Dienos herbas</v-toolbar-title>
-
-        <v-spacer></v-spacer>
-
-        <v-btn icon @click="showStats">
+        <v-btn size="small" icon @click="showStats" title="Statistika">
           <v-icon>mdi-chart-bar</v-icon>
+        </v-btn>
+        <v-btn size="small" icon @click="showHelp" title="Pagalba">
+          <v-icon>mdi-help</v-icon>
+        </v-btn>
+        <v-btn size="small" icon href="https://www.buymeacoffee.com/ovidijus" title="Pavaišinti kava">
+          <v-icon>mdi-coffee-outline</v-icon>
         </v-btn>
       </v-toolbar>
       <v-card-subtitle class="text-center">
@@ -20,6 +23,7 @@
       </v-card-text>
     </v-card>
     <CoaGameShare v-model:opened="statsVisible" />
+    <CoaGameHelp v-model:opened="helpVisible" />
 
   </div>
 </template>
@@ -31,10 +35,13 @@ import CoaGamePuzzle from '@/components/CoaGamePuzzle.vue';
 import CoaGameControl from '@/components/CoaGameControl.vue';
 import CoaGameResult from '@/components/CoaGameResult.vue';
 import CoaGameShare from '@/components/CoaGameShare.vue';
+import CoaGameHelp from '@/components/CoaGameHelp.vue';
 import { useGameStore } from '@/stores/game'
 
 const gameStore = useGameStore();
 const statsVisible = ref(false);
+const helpVisible = ref(false);
+
 
 gameStore.resetIfNeeded();
 
@@ -51,6 +58,11 @@ function showEndGame() {
 function showStats() {
   statsVisible.value = true;
 }
+
+function showHelp() {
+  helpVisible.value = true;
+}
+
 </script>
 
 <style scoped>
