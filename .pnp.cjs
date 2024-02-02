@@ -34,7 +34,6 @@ const RAW_RUNTIME_STATE =
           ["image-size", "npm:1.1.1"],\
           ["pinia", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:2.1.7"],\
           ["pinia-plugin-persistedstate", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:3.2.0"],\
-          ["random", "npm:4.1.0"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
           ["vite", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.5.0"],\
           ["vite-plugin-pwa", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:0.16.7"],\
@@ -5235,7 +5234,6 @@ const RAW_RUNTIME_STATE =
           ["image-size", "npm:1.1.1"],\
           ["pinia", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:2.1.7"],\
           ["pinia-plugin-persistedstate", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:3.2.0"],\
-          ["random", "npm:4.1.0"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
           ["vite", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:4.5.0"],\
           ["vite-plugin-pwa", "virtual:fee9791285d3fe994e413614c38b381aeeb8a0ebb212ae17a06fc0afeb73888fbe6291c7fc842f1d5d0b2d12960dfcdc7f8a72172cd86485c2c6001854034eca#npm:0.16.7"],\
@@ -5983,16 +5981,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["random", [\
-      ["npm:4.1.0", {\
-        "packageLocation": "./.yarn/cache/random-npm-4.1.0-92737a73ee-1937bd249a.zip/node_modules/random/",\
-        "packageDependencies": [\
-          ["random", "npm:4.1.0"],\
-          ["seedrandom", "npm:3.0.5"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["randombytes", [\
       ["npm:2.1.0", {\
         "packageLocation": "./.yarn/cache/randombytes-npm-2.1.0-e3da76bccf-50395efda7.zip/node_modules/randombytes/",\
@@ -6235,15 +6223,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/safer-buffer-npm-2.1.2-8d5c0b705e-7e3c8b2e88.zip/node_modules/safer-buffer/",\
         "packageDependencies": [\
           ["safer-buffer", "npm:2.1.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["seedrandom", [\
-      ["npm:3.0.5", {\
-        "packageLocation": "./.yarn/cache/seedrandom-npm-3.0.5-6946e8f8db-929752ac09.zip/node_modules/seedrandom/",\
-        "packageDependencies": [\
-          ["seedrandom", "npm:3.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\

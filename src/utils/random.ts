@@ -1,17 +1,16 @@
-import random from 'random';
-
-function genSeed(): string {
+function genSeed(): [string, number] {
     const today = new Date();
 
     let seed = '' + today.getFullYear();
-    seed += (today.getMonth() + 1 > 9 ? '' : '0') + (today.getMonth() + 1);
+    const month = today.getMonth() + 1;
+    seed += (month > 9 ? '' : '0') + month;
     seed += (today.getDate() > 9 ? '' : '0') + today.getDate();
 
-    return seed;
+    return [seed, today.getFullYear() + month * today.getDate()];
 }
-export const seed = genSeed();
-export const seededRandom = random.clone(seed);
+
+export const [seed, seedNumber] = genSeed();
 
 export function chooseRandom<T>(list: T[]): T {
-    return seededRandom.choice(list) as T;
+    return list[seedNumber % list.length];
 }
