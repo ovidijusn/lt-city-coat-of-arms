@@ -3,8 +3,8 @@ function genSeed(): [string, number] {
 
     let seed = '' + today.getFullYear();
     const month = today.getMonth() + 1;
-    seed += (month > 9 ? '' : '0') + month;
-    seed += (today.getDate() > 9 ? '' : '0') + today.getDate();
+    seed += '-' + (month > 9 ? '' : '0') + month;
+    seed += '-' + (today.getDate() > 9 ? '' : '0') + today.getDate();
 
     return [seed, today.getFullYear() + month * today.getDate()];
 }

@@ -7,6 +7,9 @@
           Dienos miestas: <b>{{ gameStore.cityName }}</b>
         </v-card-subtitle>
         <v-card-subtitle>
+          Data: {{ seed }}
+        </v-card-subtitle>
+        <v-card-subtitle>
           Atspėta: <b>{{ statsStore.totalWins }}</b> iš <b>{{ statsStore.total }}</b>
         </v-card-subtitle>
         <v-card-subtitle>
@@ -50,6 +53,7 @@ import { ref, computed } from 'vue';
 import { useGameStore } from '@/stores/game';
 import { useStatsStore } from '@/stores/stats';
 import { daysSinceLunch } from '@/utils/date';
+import { seed } from '@/utils/random';
 
 defineProps({
   opened: {
@@ -65,7 +69,6 @@ const statsStore = useStatsStore();
 const copied = ref(false);
 const title = computed(() => gameStore.ended ? (gameStore.won ? 'Sveikinimai! 🎉🥳' : 'Sekmės rytoj! 😉') : 'Statistika');
 const loses = computed(() => statsStore.total - statsStore.totalWins);
-
 
 const colors = ['green', 'light-green', 'lime', 'amber', 'orange', 'red'];
 
