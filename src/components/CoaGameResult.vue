@@ -9,9 +9,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(guess, idx) in guesses.reverse()">
+        <tr v-for="(guess, idx) in guesses.reverse()" :key="guess.cityName">
           <td>{{ guesses.length - (idx) }}/6</td>
-          <td>{{ guess.cityName }}</td>
+          <td>
+            <CoaCity :name="guess.cityName" />
+          </td>
           <td>{{ guess.distance ? (guess.distance + 'km') : 0 }}</td>
           <td>{{ guess.arrow }}</td>
         </tr>
@@ -26,6 +28,7 @@ import { useGameStore } from '@/stores/game';
 import { useCityStore } from '@/stores/city';
 import { emojiDirection, distanceBetween } from '@/utils/map';
 import { CityName } from '@/types';
+import CoaCity from '@/components/CoaCity.vue';
 
 const gameStore = useGameStore();
 const cityStore = useCityStore();

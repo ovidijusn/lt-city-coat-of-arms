@@ -47,6 +47,7 @@ export type CityName =
     'Baltoji Vokė' | 'Birštonas' | 'Biržai';
 
 export type City = {
+    about: string,
     imageSize: Size,
     location: Location
 };

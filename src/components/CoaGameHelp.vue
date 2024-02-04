@@ -9,7 +9,8 @@
         <v-card-text>
           <div class="text-h7 font-weight-bold">Kaip žaisti?</div>
           <p class="text-body-2 ma-4">
-            Kiekvieną dieną atsitiktinė tvarka bus išrenkamas Lietuvos miesto herbas(išskyrus Panemunę, kuri iki šiol
+            Kiekvieną dieną atsitiktinė tvarka bus išrenkamas Lietuvos miesto herbas(išskyrus <a
+              href="https://www.vle.lt/straipsnis/panemune/" target="_blank">Panemunę</a>, kuri iki šiol
             neturi
             herbo) ir žaidimo tikslas - atspėti kokio, tai miesto herbas su kuo mažiau spėjimų. Visi žaidėjai tą pačia
             dieną

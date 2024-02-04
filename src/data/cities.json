@@ -1,5 +1,6 @@
 {
   "Akmenė": {
+    "about": "https://www.vle.lt/straipsnis/akmene/",
     "location": {
       "latitude": 56.246,
       "longitude": 22.755
@@ -10,6 +11,7 @@
     }
   },
   "Alytus": {
+    "about": "https://www.vle.lt/straipsnis/alytus-1/",
     "location": {
       "latitude": 54.396,
       "longitude": 24.046
@@ -20,6 +22,7 @@
     }
   },
   "Anykščiai": {
+    "about": "https://www.vle.lt/straipsnis/anyksciai/",
     "location": {
       "latitude": 55.526,
       "longitude": 25.106
@@ -30,6 +33,7 @@
     }
   },
   "Ariogala": {
+    "about": "https://www.vle.lt/straipsnis/ariogala/",
     "location": {
       "latitude": 55.263,
       "longitude": 23.483
@@ -40,6 +44,7 @@
     }
   },
   "Baltoji Vokė": {
+    "about": "https://www.vle.lt/straipsnis/baltoji-voke/",
     "location": {
       "latitude": 54.454,
       "longitude": 25.12
@@ -50,6 +55,7 @@
     }
   },
   "Birštonas": {
+    "about": "https://www.vle.lt/straipsnis/birstonas/",
     "location": {
       "latitude": 54.604,
       "longitude": 24.034
@@ -60,6 +66,7 @@
     }
   },
   "Biržai": {
+    "about": "https://www.vle.lt/straipsnis/birzai/",
     "location": {
       "latitude": 56.2,
       "longitude": 24.757
@@ -70,6 +77,7 @@
     }
   },
   "Daugai": {
+    "about": "https://www.vle.lt/straipsnis/daugai/",
     "location": {
       "latitude": 54.36,
       "longitude": 24.346
@@ -80,6 +88,7 @@
     }
   },
   "Druskininkai": {
+    "about": "https://www.vle.lt/straipsnis/druskininkai/",
     "location": {
       "latitude": 54.017,
       "longitude": 23.977
@@ -90,6 +99,7 @@
     }
   },
   "Dūkštas": {
+    "about": "https://www.vle.lt/straipsnis/dukstas-1/",
     "location": {
       "latitude": 55.52,
       "longitude": 26.322
@@ -100,6 +110,7 @@
     }
   },
   "Dusetos": {
+    "about": "https://www.vle.lt/straipsnis/dusetos/",
     "location": {
       "latitude": 55.749,
       "longitude": 25.846
@@ -110,6 +121,7 @@
     }
   },
   "Eišiškės": {
+    "about": "https://www.vle.lt/straipsnis/eisiskes/",
     "location": {
       "latitude": 54.169,
       "longitude": 25
@@ -120,6 +132,7 @@
     }
   },
   "Elektrėnai": {
+    "about": "https://www.vle.lt/straipsnis/elektrenai/",
     "location": {
       "latitude": 54.787,
       "longitude": 24.671
@@ -130,6 +143,7 @@
     }
   },
   "Ežerėlis": {
+    "about": "https://www.vle.lt/straipsnis/ezerelis/",
     "location": {
       "latitude": 54.883,
       "longitude": 23.599
@@ -140,6 +154,7 @@
     }
   },
   "Gargždai": {
+    "about": "https://www.vle.lt/straipsnis/gargzdai/",
     "location": {
       "latitude": 55.718,
       "longitude": 21.395
@@ -150,6 +165,7 @@
     }
   },
   "Garliava": {
+    "about": "https://www.vle.lt/straipsnis/garliava/",
     "location": {
       "latitude": 54.828,
       "longitude": 23.875
@@ -160,6 +176,7 @@
     }
   },
   "Gelgaudiškis": {
+    "about": "https://www.vle.lt/straipsnis/gelgaudiskis/",
     "location": {
       "latitude": 55.077,
       "longitude": 22.976
@@ -170,6 +187,7 @@
     }
   },
   "Grigiškės": {
+    "about": "https://www.vle.lt/straipsnis/grigiskes/",
     "location": {
       "latitude": 54.671,
       "longitude": 25.091
@@ -180,6 +198,7 @@
     }
   },
   "Ignalina": {
+    "about": "https://www.vle.lt/straipsnis/ignalina/",
     "location": {
       "latitude": 55.34,
       "longitude": 26.161
@@ -190,6 +209,7 @@
     }
   },
   "Jieznas": {
+    "about": "https://www.vle.lt/straipsnis/jieznas/",
     "location": {
       "latitude": 54.601,
       "longitude": 24.175
@@ -200,6 +220,7 @@
     }
   },
   "Jonava": {
+    "about": "https://www.vle.lt/straipsnis/jonava/",
     "location": {
       "latitude": 55.074,
       "longitude": 24.276
@@ -210,6 +231,7 @@
     }
   },
   "Joniškėlis": {
+    "about": "https://www.vle.lt/straipsnis/joniskelis/",
     "location": {
       "latitude": 56.023,
       "longitude": 24.17
@@ -220,6 +242,7 @@
     }
   },
   "Joniškis": {
+    "about": "https://www.vle.lt/straipsnis/joniskis/",
     "location": {
       "latitude": 56.241,
       "longitude": 23.615
@@ -230,6 +253,7 @@
     }
   },
   "Jurbarkas": {
+    "about": "https://www.vle.lt/straipsnis/jurbarkas-1/",
     "location": {
       "latitude": 55.078,
       "longitude": 22.765
@@ -240,6 +264,7 @@
     }
   },
   "Kaišiadorys": {
+    "about": "https://www.vle.lt/straipsnis/kaisiadorys/",
     "location": {
       "latitude": 54.86,
       "longitude": 24.454
@@ -250,6 +275,7 @@
     }
   },
   "Kalvarija": {
+    "about": "https://www.vle.lt/straipsnis/kalvarija/",
     "location": {
       "latitude": 54.414,
       "longitude": 23.227
@@ -260,6 +286,7 @@
     }
   },
   "Kaunas": {
+    "about": "https://www.vle.lt/straipsnis/kaunas/",
     "location": {
       "latitude": 54.898,
       "longitude": 23.904
@@ -270,6 +297,7 @@
     }
   },
   "Kavarskas": {
+    "about": "https://www.vle.lt/straipsnis/kavarskas/",
     "location": {
       "latitude": 55.434,
       "longitude": 24.928
@@ -280,6 +308,7 @@
     }
   },
   "Kazlų Rūda": {
+    "about": "https://www.vle.lt/straipsnis/kazlu-ruda/",
     "location": {
       "latitude": 54.752,
       "longitude": 23.499
@@ -290,6 +319,7 @@
     }
   },
   "Kėdainiai": {
+    "about": "https://www.vle.lt/straipsnis/kedainiai/",
     "location": {
       "latitude": 55.289,
       "longitude": 23.976
@@ -300,6 +330,7 @@
     }
   },
   "Kelmė": {
+    "about": "https://www.vle.lt/straipsnis/kelme/",
     "location": {
       "latitude": 55.629,
       "longitude": 22.931
@@ -310,6 +341,7 @@
     }
   },
   "Klaipėda": {
+    "about": "https://www.vle.lt/straipsnis/klaipeda/",
     "location": {
       "latitude": 55.713,
       "longitude": 21.135
@@ -320,6 +352,7 @@
     }
   },
   "Kretinga": {
+    "about": "https://www.vle.lt/straipsnis/kretinga/",
     "location": {
       "latitude": 55.89,
       "longitude": 21.242
@@ -330,6 +363,7 @@
     }
   },
   "Kudirkos Naumiestis": {
+    "about": "https://www.vle.lt/straipsnis/kudirkos-naumiestis/",
     "location": {
       "latitude": 54.774,
       "longitude": 22.863
@@ -340,6 +374,7 @@
     }
   },
   "Kupiškis": {
+    "about": "https://www.vle.lt/straipsnis/kupiskis/",
     "location": {
       "latitude": 55.839,
       "longitude": 24.976
@@ -350,6 +385,7 @@
     }
   },
   "Kuršėnai": {
+    "about": "https://www.vle.lt/straipsnis/kursenai/",
     "location": {
       "latitude": 56.004,
       "longitude": 22.933
@@ -360,6 +396,7 @@
     }
   },
   "Kybartai": {
+    "about": "https://www.vle.lt/straipsnis/kybartai-1/",
     "location": {
       "latitude": 54.643,
       "longitude": 22.751
@@ -370,6 +407,7 @@
     }
   },
   "Lazdijai": {
+    "about": "https://www.vle.lt/straipsnis/lazdijai/",
     "location": {
       "latitude": 54.235,
       "longitude": 23.511
@@ -380,6 +418,7 @@
     }
   },
   "Lentvaris": {
+    "about": "https://www.vle.lt/straipsnis/lentvaris/",
     "location": {
       "latitude": 54.643,
       "longitude": 25.05
@@ -390,6 +429,7 @@
     }
   },
   "Linkuva": {
+    "about": "https://www.vle.lt/straipsnis/linkuva/",
     "location": {
       "latitude": 56.086,
       "longitude": 23.974
@@ -400,6 +440,7 @@
     }
   },
   "Marijampolė": {
+    "about": "https://www.vle.lt/straipsnis/marijampole/",
     "location": {
       "latitude": 54.556,
       "longitude": 23.35
@@ -410,6 +451,7 @@
     }
   },
   "Mažeikiai": {
+    "about": "https://www.vle.lt/straipsnis/mazeikiai/",
     "location": {
       "latitude": 56.311,
       "longitude": 22.348
@@ -420,6 +462,7 @@
     }
   },
   "Molėtai": {
+    "about": "https://www.vle.lt/straipsnis/moletai/",
     "location": {
       "latitude": 55.232,
       "longitude": 25.419
@@ -430,6 +473,7 @@
     }
   },
   "Naujoji Akmenė": {
+    "about": "https://www.vle.lt/straipsnis/naujoji-akmene/",
     "location": {
       "latitude": 56.325,
       "longitude": 22.88
@@ -440,6 +484,7 @@
     }
   },
   "Nemenčinė": {
+    "about": "https://www.vle.lt/straipsnis/nemencine/",
     "location": {
       "latitude": 54.848,
       "longitude": 25.469
@@ -450,6 +495,7 @@
     }
   },
   "Neringa": {
+    "about": "https://www.vle.lt/straipsnis/neringa/",
     "location": {
       "latitude": 55.306,
       "longitude": 20.996
@@ -460,6 +506,7 @@
     }
   },
   "Obeliai": {
+    "about": "https://www.vle.lt/straipsnis/obeliai/",
     "location": {
       "latitude": 55.941,
       "longitude": 25.796
@@ -470,6 +517,7 @@
     }
   },
   "Pabradė": {
+    "about": "https://www.vle.lt/straipsnis/pabrade/",
     "location": {
       "latitude": 54.983,
       "longitude": 25.766
@@ -480,6 +528,7 @@
     }
   },
   "Pagėgiai": {
+    "about": "https://www.vle.lt/straipsnis/pagegiai/",
     "location": {
       "latitude": 55.133,
       "longitude": 21.91
@@ -490,6 +539,7 @@
     }
   },
   "Pakruojis": {
+    "about": "https://www.vle.lt/straipsnis/pakruojis/",
     "location": {
       "latitude": 55.978,
       "longitude": 23.845
@@ -500,6 +550,7 @@
     }
   },
   "Palanga": {
+    "about": "https://www.vle.lt/straipsnis/palanga/",
     "location": {
       "latitude": 55.923,
       "longitude": 21.068
@@ -510,6 +561,7 @@
     }
   },
   "Pandėlys": {
+    "about": "https://www.vle.lt/straipsnis/pandelys/",
     "location": {
       "latitude": 56.023,
       "longitude": 25.227
@@ -520,6 +572,7 @@
     }
   },
   "Panevėžys": {
+    "about": "https://www.vle.lt/straipsnis/panevezys/",
     "location": {
       "latitude": 55.734,
       "longitude": 24.358
@@ -530,6 +583,7 @@
     }
   },
   "Pasvalys": {
+    "about": "https://www.vle.lt/straipsnis/pasvalys/",
     "location": {
       "latitude": 56.062,
       "longitude": 24.397
@@ -540,6 +594,7 @@
     }
   },
   "Plungė": {
+    "about": "Plungė",
     "location": {
       "latitude": 55.914,
       "longitude": 21.853
@@ -550,6 +605,7 @@
     }
   },
   "Priekulė": {
+    "about": "https://www.vle.lt/straipsnis/priekule/",
     "location": {
       "latitude": 55.555,
       "longitude": 21.318
@@ -560,6 +616,7 @@
     }
   },
   "Prienai": {
+    "about": "https://www.vle.lt/straipsnis/prienai/",
     "location": {
       "latitude": 54.634,
       "longitude": 23.943
@@ -570,6 +627,7 @@
     }
   },
   "Radviliškis": {
+    "about": "https://www.vle.lt/straipsnis/radviliskis/",
     "location": {
       "latitude": 55.816,
       "longitude": 23.551
@@ -580,6 +638,7 @@
     }
   },
   "Ramygala": {
+    "about": "https://www.vle.lt/straipsnis/ramygala/",
     "location": {
       "latitude": 55.51,
       "longitude": 24.305
@@ -590,6 +649,7 @@
     }
   },
   "Raseiniai": {
+    "about": "https://www.vle.lt/straipsnis/raseiniai/",
     "location": {
       "latitude": 55.378,
       "longitude": 23.117
@@ -600,6 +660,7 @@
     }
   },
   "Rietavas": {
+    "about": "https://www.vle.lt/straipsnis/rietavas/",
     "location": {
       "latitude": 55.723,
       "longitude": 21.927
@@ -610,6 +671,7 @@
     }
   },
   "Rokiškis": {
+    "about": "https://www.vle.lt/straipsnis/rokiskis/",
     "location": {
       "latitude": 55.954,
       "longitude": 25.592
@@ -620,6 +682,7 @@
     }
   },
   "Rūdiškės": {
+    "about": "https://www.vle.lt/straipsnis/rudiskes/",
     "location": {
       "latitude": 54.521,
       "longitude": 24.832
@@ -630,6 +693,7 @@
     }
   },
   "Šakiai": {
+    "about": "https://www.vle.lt/straipsnis/sakiai/",
     "location": {
       "latitude": 54.956,
       "longitude": 23.04
@@ -640,6 +704,7 @@
     }
   },
   "Salantai": {
+    "about": "https://www.vle.lt/straipsnis/salantai/",
     "location": {
       "latitude": 56.059,
       "longitude": 21.569
@@ -650,6 +715,7 @@
     }
   },
   "Šalčininkai": {
+    "about": "https://www.vle.lt/straipsnis/salcininkai/",
     "location": {
       "latitude": 54.309,
       "longitude": 25.382
@@ -660,6 +726,7 @@
     }
   },
   "Seda": {
+    "about": "https://www.vle.lt/straipsnis/seda/",
     "location": {
       "latitude": 56.167,
       "longitude": 22.093
@@ -670,6 +737,7 @@
     }
   },
   "Šeduva": {
+    "about": "https://www.vle.lt/straipsnis/seduva/",
     "location": {
       "latitude": 55.757,
       "longitude": 23.757
@@ -680,6 +748,7 @@
     }
   },
   "Šiauliai": {
+    "about": "https://www.vle.lt/straipsnis/siauliai-1/",
     "location": {
       "latitude": 55.934,
       "longitude": 23.316
@@ -690,6 +759,7 @@
     }
   },
   "Šilalė": {
+    "about": "https://www.vle.lt/straipsnis/silale/",
     "location": {
       "latitude": 55.49,
       "longitude": 22.186
@@ -700,6 +770,7 @@
     }
   },
   "Šilutė": {
+    "about": "https://www.vle.lt/straipsnis/silute/",
     "location": {
       "latitude": 55.341,
       "longitude": 21.461
@@ -710,6 +781,7 @@
     }
   },
   "Simnas": {
+    "about": "https://www.vle.lt/straipsnis/simnas/",
     "location": {
       "latitude": 54.383,
       "longitude": 23.646
@@ -720,6 +792,7 @@
     }
   },
   "Širvintos": {
+    "about": "https://www.vle.lt/straipsnis/sirvintos/",
     "location": {
       "latitude": 55.052,
       "longitude": 24.951
@@ -730,6 +803,7 @@
     }
   },
   "Skaudvilė": {
+    "about": "https://www.vle.lt/straipsnis/skaudvile/",
     "location": {
       "latitude": 55.408,
       "longitude": 22.578
@@ -740,6 +814,7 @@
     }
   },
   "Skuodas": {
+    "about": "https://www.vle.lt/straipsnis/skuodas/",
     "location": {
       "latitude": 56.269,
       "longitude": 21.524
@@ -750,6 +825,7 @@
     }
   },
   "Smalininkai": {
+    "about": "https://www.vle.lt/straipsnis/smalininkai/",
     "location": {
       "latitude": 55.074,
       "longitude": 22.579
@@ -760,6 +836,7 @@
     }
   },
   "Subačius": {
+    "about": "https://www.vle.lt/straipsnis/subacius/",
     "location": {
       "latitude": 55.768,
       "longitude": 24.744
@@ -770,6 +847,7 @@
     }
   },
   "Švenčionėliai": {
+    "about": "https://www.vle.lt/straipsnis/svencioneliai/",
     "location": {
       "latitude": 55.165,
       "longitude": 25.999
@@ -780,6 +858,7 @@
     }
   },
   "Švenčionys": {
+    "about": "https://www.vle.lt/straipsnis/svencionys/",
     "location": {
       "latitude": 55.134,
       "longitude": 26.163
@@ -790,6 +869,7 @@
     }
   },
   "Tauragė": {
+    "about": "https://www.vle.lt/straipsnis/taurage/",
     "location": {
       "latitude": 55.253,
       "longitude": 22.29
@@ -800,6 +880,7 @@
     }
   },
   "Telšiai": {
+    "about": "https://www.vle.lt/straipsnis/telsiai/",
     "location": {
       "latitude": 55.985,
       "longitude": 22.249
@@ -810,6 +891,7 @@
     }
   },
   "Trakai": {
+    "about": "https://www.vle.lt/straipsnis/trakai-1/",
     "location": {
       "latitude": 54.645,
       "longitude": 24.935
@@ -820,6 +902,7 @@
     }
   },
   "Troškūnai": {
+    "about": "https://www.vle.lt/straipsnis/troskunai/",
     "location": {
       "latitude": 55.587,
       "longitude": 24.871
@@ -830,6 +913,7 @@
     }
   },
   "Tytuvėnai": {
+    "about": "https://www.vle.lt/straipsnis/tytuvenai/",
     "location": {
       "latitude": 55.597,
       "longitude": 23.197
@@ -840,6 +924,7 @@
     }
   },
   "Ukmergė": {
+    "about": "https://www.vle.lt/straipsnis/ukmerge/",
     "location": {
       "latitude": 55.248,
       "longitude": 24.76
@@ -850,6 +935,7 @@
     }
   },
   "Utena": {
+    "about": "https://www.vle.lt/straipsnis/utena/",
     "location": {
       "latitude": 55.498,
       "longitude": 25.603
@@ -860,6 +946,7 @@
     }
   },
   "Užventis": {
+    "about": "https://www.vle.lt/straipsnis/uzventis/",
     "location": {
       "latitude": 55.782,
       "longitude": 22.656
@@ -870,6 +957,7 @@
     }
   },
   "Vabalninkas": {
+    "about": "https://www.vle.lt/straipsnis/vabalninkas/",
     "location": {
       "latitude": 55.98,
       "longitude": 24.747
@@ -880,6 +968,7 @@
     }
   },
   "Varėna": {
+    "about": "https://www.vle.lt/straipsnis/varena/",
     "location": {
       "latitude": 54.212,
       "longitude": 24.567
@@ -890,6 +979,7 @@
     }
   },
   "Varniai": {
+    "about": "https://www.vle.lt/straipsnis/varniai/",
     "location": {
       "latitude": 55.743,
       "longitude": 22.371
@@ -900,6 +990,7 @@
     }
   },
   "Veisiejai": {
+    "about": "https://www.vle.lt/straipsnis/veisiejai/",
     "location": {
       "latitude": 54.1,
       "longitude": 23.695
@@ -910,6 +1001,7 @@
     }
   },
   "Venta": {
+    "about": "https://www.vle.lt/straipsnis/venta-1/",
     "location": {
       "latitude": 56.19,
       "longitude": 22.689
@@ -920,6 +1012,7 @@
     }
   },
   "Viekšniai": {
+    "about": "https://www.vle.lt/straipsnis/vieksniai/",
     "location": {
       "latitude": 56.236,
       "longitude": 22.513
@@ -930,6 +1023,7 @@
     }
   },
   "Vievis": {
+    "about": "https://www.vle.lt/straipsnis/vievis-1/",
     "location": {
       "latitude": 54.769,
       "longitude": 24.816
@@ -940,6 +1034,7 @@
     }
   },
   "Vilkaviškis": {
+    "about": "https://www.vle.lt/straipsnis/vilkaviskis/",
     "location": {
       "latitude": 54.65,
       "longitude": 23.036
@@ -950,6 +1045,7 @@
     }
   },
   "Vilkija": {
+    "about": "https://www.vle.lt/straipsnis/vilkija-1/",
     "location": {
       "latitude": 55.04,
       "longitude": 23.583
@@ -960,6 +1056,7 @@
     }
   },
   "Vilnius": {
+    "about": "https://www.vle.lt/straipsnis/vilnius-1/",
     "location": {
       "latitude": 54.687,
       "longitude": 25.283
@@ -970,6 +1067,7 @@
     }
   },
   "Virbalis": {
+    "about": "https://www.vle.lt/straipsnis/virbalis/",
     "location": {
       "latitude": 54.626,
       "longitude": 22.823
@@ -980,6 +1078,7 @@
     }
   },
   "Visaginas": {
+    "about": "https://www.vle.lt/straipsnis/visaginas-1/",
     "location": {
       "latitude": 55.6,
       "longitude": 26.437
@@ -990,6 +1089,7 @@
     }
   },
   "Žagarė": {
+    "about": "https://www.vle.lt/straipsnis/zagare/",
     "location": {
       "latitude": 56.358,
       "longitude": 23.255
@@ -1000,6 +1100,7 @@
     }
   },
   "Zarasai": {
+    "about": "https://www.vle.lt/straipsnis/zarasai/",
     "location": {
       "latitude": 55.73,
       "longitude": 26.247
@@ -1010,6 +1111,7 @@
     }
   },
   "Žiežmariai": {
+    "about": "https://www.vle.lt/straipsnis/ziezmariai/",
     "location": {
       "latitude": 54.806,
       "longitude": 24.443

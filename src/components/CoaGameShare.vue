@@ -4,7 +4,9 @@
       <v-card :title="title">
         <template #append><v-btn icon="mdi-close" variant="text" @click="emit('update:opened', false)"></v-btn></template>
         <v-card-subtitle v-if="gameStore.ended">
-          Dienos miestas: <b>{{ gameStore.cityName }}</b>
+          Dienos miestas: <b>
+            <CoaCity :name="gameStore.cityName" />
+          </b>
         </v-card-subtitle>
         <v-card-subtitle>
           Data: {{ seed }}
@@ -40,7 +42,7 @@
         </v-card-text>
 
         <v-card-actions v-if="gameStore.ended">
-          <v-btn prepend-icon="mdi-share-variant" @click="share" title="Dalintis">Dalintis</v-btn>
+          <v-btn prepend-icon="mdi-share-variant" @click="share" title="Dalintis dienos rezultatu">Dalintis</v-btn>
           <v-snackbar v-model="copied" color="info" timeout="2000">Resultas nukopijuotas</v-snackbar>
         </v-card-actions>
       </v-card>
@@ -50,6 +52,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
+import CoaCity from '@/components/CoaCity.vue';
 import { useGameStore } from '@/stores/game';
 import { useStatsStore } from '@/stores/stats';
 import { daysSinceLunch } from '@/utils/date';
