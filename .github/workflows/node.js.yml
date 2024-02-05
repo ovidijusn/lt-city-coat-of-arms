@@ -26,6 +26,8 @@ jobs:
         run: yarn install
       - name: Run build
         run: yarn build
-      - name: Archive
-        run: tar cvf artifact.tar dist/
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
 
