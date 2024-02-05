@@ -22,14 +22,10 @@ jobs:
           node-version: 18.x
       - name: Enable Corepack
         run: corepack enable
-      - name: yarn install2
-        run: yarn install
       - name: Run install
-        uses: borales/actions-yarn@v4.2.0
-        with:
-          cmd: install
-
+        run: yarn install
       - name: Run build
-        uses: borales/actions-yarn@v4.2.0
-        with:
-          cmd: build
+        uses: yarn build
+      - name: Archive
+        uses: tar cvf artifact.tar dist/
+
