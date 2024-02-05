@@ -12,7 +12,7 @@
             Kiekvieną dieną atsitiktine tvarka bus išrenkamas Lietuvos miesto herbas(išskyrus <a
               href="https://www.vle.lt/straipsnis/panemune/" target="_blank">Panemunę</a>, kuri iki šiol
             neturi
-            herbo) ir žaidimo tikslas - atspėti, kokio tai miesto herbas su kuo mažiau spėjimų. Visi žaidėjai tą pačią
+            herbo), o žaidimo tikslas - atspėti, kokio tai miesto herbas su kuo mažiau spėjimų. Visi žaidėjai tą pačią
             dieną
             gauna tą patį herbą.
           </p>
