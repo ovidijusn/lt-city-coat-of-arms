@@ -25,7 +25,7 @@ jobs:
       - name: Run install
         run: yarn install
       - name: Run build
-        uses: yarn build
+        run: yarn build
       - name: Archive
-        uses: tar cvf artifact.tar dist/
+        run: tar cvf artifact.tar dist/
 
