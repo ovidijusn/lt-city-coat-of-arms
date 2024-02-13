@@ -1,4 +1,4 @@
-function genSeed(): [string, number] {
+export function genSeed(): [string, number] {
     const today = new Date();
 
     let seed = '' + today.getFullYear();

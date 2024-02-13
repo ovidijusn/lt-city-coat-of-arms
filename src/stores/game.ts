@@ -14,7 +14,6 @@ interface State {
 }
 
 function createState(cityName: CityName | undefined): State {
-    console.log('Init Game state');
     let city;
     if (cityName) {
         city = cityName;
