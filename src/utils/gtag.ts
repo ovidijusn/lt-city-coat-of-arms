@@ -12,9 +12,9 @@ export function gWon(guesses: number, city: string) {
 }
 
 export function gLost(city: string) {
-  gEvent("lose", { city });
+  gEvent("lost", { city });
 }
 
 export function gGuessed(guesses: number, city: string) {
-  gEvent("guessed", { guesses, city });
+  gEvent("made_a_guess", { guesses, city });
 }
