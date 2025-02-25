@@ -15,7 +15,7 @@ import { CityName } from '@/types';
 import { normalize } from '@/utils/text';
 
 const gameStore = useGameStore();
-const city = ref('');
+const city = ref(null as CityName|null );
 const search = ref('');
 const menu = ref(false);
 const hideNames = ref(false);
@@ -45,7 +45,7 @@ function enter() {
 function guess() {
   if (canGuess.value) {
     gameStore.addGuess(city.value as CityName);
-    city.value = '';
+    city.value = null;
     search.value = ''
     hideNames.value = true
   }
