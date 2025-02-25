@@ -2,6 +2,7 @@ import { defineStore } from "pinia";
 
 import rnd from "../data/random.json";
 import { chooseRandom, seed } from "@/utils/random";
+import { gGuessed, gLost, gWon } from "@/utils/gtag";
 import { useCityStore } from "@/stores/city";
 import { useStatsStore } from "@/stores/stats";
 import { CityName } from "@/types";
@@ -111,12 +112,16 @@ export const useGameStore = defineStore("game", {
         },
         addGuess(cityName: CityName) {
             if (this.guesses.length < 6) {
+               
                 this.guesses.push(cityName);
+                gGuessed(this.guesses.length, this.cityName);
 
                 if (this.won) {
                     useStatsStore().win(this.guesses.length);
+                    gWon(this.guesses.length, this.cityName);
                 } else if (this.lost) {
                     useStatsStore().loose();
+                    gLost(this.cityName);
                 } else {
                     this.flipped.push(...this.flipSequence.splice(0, 1));
                 }
