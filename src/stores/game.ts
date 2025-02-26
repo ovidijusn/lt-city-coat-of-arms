@@ -114,8 +114,6 @@ export const useGameStore = defineStore("game", {
             if (this.guesses.length < 6) {
                
                 this.guesses.push(cityName);
-                gGuessed(this.guesses.length, this.cityName);
-
                 if (this.won) {
                     useStatsStore().win(this.guesses.length);
                     gWon(this.guesses.length, this.cityName);
@@ -124,6 +122,7 @@ export const useGameStore = defineStore("game", {
                     gLost(this.cityName);
                 } else {
                     this.flipped.push(...this.flipSequence.splice(0, 1));
+                    gGuessed(this.guesses.length, this.cityName);
                 }
             }
         },
