@@ -76,7 +76,10 @@ const loses = computed(() => statsStore.total - statsStore.totalWins);
 const colors = ['green', 'light-green', 'lime', 'amber', 'orange', 'red'];
 
 function _redOrGreen(idx: number): string {
-  return gameStore.flipped.includes(idx) ? '🟥' : '🟩';
+  if(gameStore.ended && !gameStore.won){
+    return '🟥';
+  }
+  return gameStore.flipped.includes(idx) ? '🟧' : '🟩';
 }
 function _puzzle(): string {
   return `${_redOrGreen(0)}${_redOrGreen(1)}
